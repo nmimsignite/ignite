@@ -1,0 +1,1038 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #194bcc;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Integral CF, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.page3 {
+  overflow: hidden;
+  background: #194bcc;
+}
+
+.page4 {
+  background: #555555;
+  padding: 120px 0 0px 0 !important;
+}
+
+.socialCards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20vw 20vw 20vw 20vw;
+      grid-template-columns: 20vw 20vw 20vw 20vw;
+  grid-row: auto auto;
+}
+
+.socialCard {
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 250px;
+  background: #555555;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+  padding: 0 10px;
+  position: relative;
+}
+
+.socialCard svg {
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+  width: 50px;
+}
+
+.newPageIcon {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.socialCard:hover .newPageIcon {
+  display: block;
+}
+
+.socialCard:hover svg {
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+@-webkit-keyframes cementToColor {
+  0% {
+  }
+  50% {
+    -webkit-box-shadow: inset 10px 10px 60px #484848, inset -10px -10px 60px #626262;
+            box-shadow: inset 10px 10px 60px #484848, inset -10px -10px 60px #626262;
+  }
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@keyframes cementToColor {
+  0% {
+  }
+  50% {
+    -webkit-box-shadow: inset 10px 10px 60px #484848, inset -10px -10px 60px #626262;
+            box-shadow: inset 10px 10px 60px #484848, inset -10px -10px 60px #626262;
+  }
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.twitter:hover {
+  background: #2aa9e0;
+}
+
+.youtube:hover {
+  background: #ff0000;
+}
+
+.facebook:hover {
+  background: #1977f3;
+}
+
+.instagram:hover {
+  background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #ffdd55 0%, #ffdd55 10%, #ff543e 50%, #c837ab 100%);
+}
+
+.emailCard {
+  width: 60vw;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 60px;
+  margin-top: 0px;
+  /* yerow */
+  border-radius: 15px;
+  position: relative;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.emailCard:hover {
+  background: linear-gradient(144.69deg, #f6bf4a 1.56%, #ec622d 35.7%, #dc395e 64.16%, #c04d95 92.61%);
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.hand {
+  position: absolute;
+  border-radius: 15px;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  opacity: 0;
+  -webkit-transform: translate(0px, 0);
+          transform: translate(0px, 0);
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.emailCard:hover .hand {
+  display: block;
+  opacity: 1;
+  -webkit-transform: translate(0px, 0);
+          transform: translate(0px, 0);
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.socialcardText {
+  text-align: center;
+  font-family: Circular Std, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 100%;
+  /* identical to box height, or 25px */
+  opacity: 0;
+  text-align: center;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.socialcardTextBefore {
+  text-align: center;
+  font-family: Circular Std, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 100%;
+  /* identical to box height, or 25px */
+  opacity: 0;
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.socialCard:hover .socialcardText {
+  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.socialCard:hover .socialcardTextBefore {
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+a {
+  cursor: none;
+}
+
+.massiveText {
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  text-decoration: underline;
+}
+
+.humans {
+  width: 500px;
+  margin: 50px 0;
+  overflow: hidden;
+}
+
+.mobileNavbar {
+  display: none;
+}
+
+.pd-30 button,
+.pd-30 a {
+  margin: 20px 16px;
+  text-decoration: unset;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
+
+.md-top-50 {
+  margin-top: 50px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.page1 {
+  padding: 80px 10vw;
+  background: linear-gradient(144.69deg, #f6bf4a 1.56%, #ec622d 35.7%, #dc395e 64.16%, #c04d95 92.61%);
+  margin-bottom: 0 !important;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.page2 {
+  color: #05d5b8;
+  background: #554cc2;
+  padding: 120px 0 0px 0 !important;
+  position: relative;
+}
+
+.gaming {
+  background: -webkit-gradient(linear, left top, left bottom, from(#cb4580), to(#cb1e52));
+  background: linear-gradient(180deg, #cb4580 0%, #cb1e52 100%);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.techTalks {
+  background: linear-gradient(148deg, #00938a 9.18%, #00a098 90.83%);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.subText {
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 100%;
+  /* or 30px */
+  margin-left: 30px;
+  margin-right: 60px;
+  width: 600px;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+}
+
+.eventsFlow {
+  font-family: Integral CF, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  /* identical to box height, or 70px */
+  color: #05d4b8;
+  width: 100%;
+  overflow: hidden !important;
+}
+
+.zOK {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.zOK span {
+  padding: 0 20px;
+}
+
+.bEl {
+  -webkit-animation: AlL 15s linear infinite;
+          animation: AlL 15s linear infinite;
+}
+
+@-webkit-keyframes AlL {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@keyframes AlL {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.lookman {
+  position: absolute;
+  width: 526px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.mike {
+  position: absolute;
+  width: 250px;
+  left: 0px;
+  top: -100px;
+  z-index: 1;
+}
+
+.tagline {
+  margin-top: 20px;
+  font-family: "Epilogue", "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 87%;
+  /* or 70px */
+  mix-blend-mode: soft-light;
+  -webkit-filter: saturate(150%);
+          filter: saturate(150%);
+  letter-spacing: -0.015em;
+  color: #ffffff;
+}
+
+.subhead {
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  margin: 20px 47.57% 0 0;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 100%;
+  /* or 30px */
+  letter-spacing: -0.015em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar {
+  font-family: Integral CF, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6em;
+  /* or 26px */
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: rgba(255, 255, 255, 0.1);
+  mix-blend-mode: normal;
+  height: 50px;
+  z-index: 9;
+  -webkit-backdrop-filter: saturate(120%) blur(90px);
+          backdrop-filter: saturate(120%) blur(90px);
+}
+
+.navbar .item {
+  margin: 12px 20px;
+}
+
+.button,
+.buttonBell {
+  padding: 15px 28px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0 0 0;
+  cursor: none;
+  border: 2px solid transparent;
+}
+
+.buttons {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button svg {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175), -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+}
+
+.button:hover svg {
+  -webkit-transform: translate(4px, 0);
+          transform: translate(4px, 0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175), -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+}
+
+.button:hover {
+  cursor: none !important;
+}
+
+.buttonBell svg {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175), -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+}
+
+.buttonBell:hover svg {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175), -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+}
+
+.red {
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.hollowButton {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.ideathon {
+  background: linear-gradient(139.41deg, #ebbe21 5.11%, #d67300 91.8%);
+  min-height: 100vh;
+  overflow: hidden;
+  padding-left: 60px;
+}
+
+.whitebutYellow {
+  background-color: white;
+  color: #e19d12;
+}
+
+.whitebutRed {
+  background-color: white;
+  color: #bc4069;
+}
+
+.hackathonLogo {
+  width: 80px;
+}
+
+.divCenter {
+  display: block;
+  margin: auto;
+  text-align: center;
+  left: 50%;
+}
+
+.card {
+  margin: auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.card .col {
+  margin: auto 30px;
+}
+
+.eventDetailPage {
+  padding-top: 90px;
+}
+
+.cardHead {
+  font-family: "Integral CF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 87%;
+  letter-spacing: 0.025em;
+  /* or 17px */
+}
+
+.yellowCardHead {
+  color: #dc8a0a;
+}
+
+.yelloCardText {
+  color: #861414;
+}
+
+.gameCardHead {
+  color: #cb2d63;
+}
+
+.gameCardText {
+  color: #001e6b;
+}
+
+.techtalksCardHead {
+  color: #00938a;
+}
+
+.techtalksText {
+  color: #3f3820;
+}
+
+.cardText {
+  margin: 10px 0 8px 0;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 87%;
+  /* or 26px */
+  letter-spacing: -0.015em;
+}
+
+.closeModal {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+}
+
+.eventNameContainer {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.underlineEvent {
+  position: absolute;
+  display: none;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+
+.sticker {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+
+.relative {
+  position: relative;
+}
+
+@media screen and (max-width: 980px) {
+  .socialcardText {
+    display: block;
+    opacity: 1;
+  }
+  .twitter {
+    background: #2aa9e0;
+  }
+  .youtube {
+    background: #ff0000;
+  }
+  .facebook {
+    background: #1977f3;
+  }
+  .instagram {
+    background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #ffdd55 0%, #ffdd55 10%, #ff543e 50%, #c837ab 100%);
+  }
+  .socialCards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-row: auto;
+    grid-gap: 20px 20px;
+    margin-bottom: 30px;
+  }
+  a {
+    cursor: pointer;
+  }
+  .socialCard {
+    margin: auto auto;
+    padding: 0 20px;
+  }
+  .page4 {
+    overflow: hidden;
+  }
+  .massiveText {
+    font-size: 8vw;
+  }
+  .emailCard {
+    width: 90vw;
+    margin-bottom: 60px;
+  }
+  .underlineEvent {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  .growMobile {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .closeModal {
+    position: absolute;
+    top: 20px;
+    right: unset;
+    left: 40px;
+  }
+  .card {
+    width: 90vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 40px;
+  }
+  .eventDetailPage {
+    padding-top: 160px !important;
+  }
+  .eventDetailPage .eventName {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .cardHead,
+  .cardText {
+    margin: 20px 0;
+  }
+  .button,
+  .buttonBell {
+    cursor: pointer !important;
+  }
+  .button:hover {
+    cursor: pointer !important;
+  }
+  .remindmeArrow {
+    width: 27px;
+  }
+  .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .eventNameTitle {
+    width: 80vw;
+  }
+  .subText {
+    width: 80%;
+    margin: auto !important;
+    text-align: center;
+  }
+  .tagline {
+    text-align: center !important;
+    font-size: 2rem;
+  }
+  .subhead {
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-size: 1em;
+  }
+  .page1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin-bottom: 0;
+    padding: 100px 10px 100px 10px;
+    padding: 30px 5vw 0 5vw !important;
+    height: 100%;
+  }
+  .page2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin-bottom: 0;
+    padding: 100px 10px 100px 10px;
+    height: 100%;
+  }
+  .lookman {
+    position: relative;
+    width: 50vw;
+    justify-self: flex-end;
+  }
+  .button {
+    width: 100%;
+    font-size: 1.5rem;
+    cursor: default !important;
+  }
+  .mike {
+    width: 140px;
+    top: -10px;
+  }
+  .mobileNavbar {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px 16px;
+    opacity: 1;
+    mix-blend-mode: overlay;
+    -webkit-backdrop-filter: saturate(120%) blur(90px);
+            backdrop-filter: saturate(120%) blur(90px);
+    z-index: 9;
+    border-radius: 32px;
+  }
+  .movileNavbar {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  .navbar {
+    display: none;
+  }
+  .ideathon,
+  .gaming,
+  .techTalks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 80px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .hackathonLogo {
+    width: 40px;
+  }
+  body {
+    cursor: default !important;
+  }
+  .cursor {
+    display: none !important;
+  }
+  .button,
+  .buttonBell {
+    font-size: 1rem;
+    width: auto !important;
+    cursor: default !important;
+  }
+}
+
+.modal {
+  max-width: 100vw !important;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10 !important;
+  overflow: scroll;
+  padding: 0;
+  -webkit-animation: all 2s ease-in-out;
+          animation: all 2s ease-in-out;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("fonts/IntegralCF-ExtraBold.woff2") format("woff2"), url("fonts/IntegralCF-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("IntegralCF-Medium.woff2") format("wpage4off2"), url("IntegralCF-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("fonts/CircularStd-Bold.woff2") format("woff2"), url("fonts/CircularStd-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("fonts/CircularStd-Medium.woff2") format("woff2"), url("fonts/CircularStd-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("fonts/CircularStd-Book.woff2") format("woff2"), url("fonts/CircularStd-Book.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  cursor: none;
+}
+
+.cursor {
+  pointer-events: none;
+}
+
+body .cursor__ball {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000 !important;
+}
+
+body .cursor__ball circle {
+  fill: #f7f8fa;
+  position: fixed !important;
+}
+
+.swipe {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+
+.swipe1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#cb4580), to(#cb1e52));
+  background: linear-gradient(180deg, #cb4580 0%, #cb1e52 100%);
+  z-index: 17;
+}
+
+.swipe2 {
+  background: linear-gradient(139.41deg, #ebbe21 5.11%, #d67300 91.8%);
+  z-index: 16;
+}
+
+.swipe3 {
+  background: linear-gradient(148deg, #00938a 9.18%, #00a098 90.83%);
+  z-index: 15;
+}
+/*# sourceMappingURL=styles.css.map */
