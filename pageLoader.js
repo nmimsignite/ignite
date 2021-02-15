@@ -38,5 +38,5 @@ document.head.appendChild(s),
         (u.style.userSelect = ""),
         (u.style.cursor = "");
       a.remove();
-    }, 1000);
+    }, 600);
   });
