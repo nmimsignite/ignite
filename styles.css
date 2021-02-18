@@ -746,6 +746,12 @@ a {
 }
 
 @media screen and (max-width: 980px) {
+  .sponsors {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .socialcardText {
     display: block;
     opacity: 1;

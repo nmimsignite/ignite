@@ -695,6 +695,9 @@ a {
   position: relative;
 }
 @media screen and (max-width: 980px) {
+  .sponsors {
+    flex-direction: column;
+  }
   .socialcardText {
     display: block;
     opacity: 1;
