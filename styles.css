@@ -350,8 +350,20 @@ a {
   overflow: hidden;
 }
 
+.creative {
+  background: #8e0180;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 .techTalks {
   background: linear-gradient(148deg, #00938a 9.18%, #00a098 90.83%);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.memeService {
+  background: #0083cc;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -895,7 +907,9 @@ a {
   }
   .ideathon,
   .gaming,
-  .techTalks {
+  .techTalks,
+  .creative,
+  .memeService {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

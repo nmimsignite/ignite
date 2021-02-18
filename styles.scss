@@ -348,9 +348,18 @@ a {
   min-height: 100vh;
   overflow: hidden;
 }
-
+.creative {
+  background: #8e0180;
+  min-height: 100vh;
+  overflow: hidden;
+}
 .techTalks {
   background: linear-gradient(148deg, #00938a 9.18%, #00a098 90.83%);
+  min-height: 100vh;
+  overflow: hidden;
+}
+.memeService {
+  background: #0083cc;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -841,7 +850,9 @@ a {
   }
   .ideathon,
   .gaming,
-  .techTalks {
+  .techTalks,
+  .creative,
+  .memeService {
     flex-direction: column;
     padding-top: 80px;
     padding-left: 0;
