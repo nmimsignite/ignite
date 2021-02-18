@@ -375,7 +375,7 @@ a {
 .page25 {
   // color: #05d5b8;
   background: linear-gradient(180deg, #3d4448 0%, #1c1f21 100%);
-  padding: 120px 0 40px 0 !important;
+  padding: 120px 0 100px 0 !important;
   position: relative;
   // overflow-y: hidden;
 }
@@ -586,7 +586,10 @@ a {
 
   opacity: 0.8;
 }
-
+.overflowHiddenX {
+  overflow: hidden !important;
+  max-width: 100%;
+}
 .ideathon {
   background: linear-gradient(139.41deg, #ebbe21 5.11%, #d67300 91.8%);
   // background-color: #000;
@@ -745,7 +748,7 @@ a {
     padding: 0 20px;
   }
   .page4 {
-    overflow: hidden;
+    overflow: hidden !important;
   }
   .massiveText {
     font-size: 8vw;
@@ -965,7 +968,7 @@ a {
 }
 @font-face {
   font-family: "Integral CF";
-  src: url("IntegralCF-Medium.woff2") format("wpage4off2"),
+  src: url("IntegralCF-Medium.woff2") format("woff2"),
     url("IntegralCF-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
