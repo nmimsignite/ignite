@@ -342,8 +342,28 @@ a {
   align-items: center;
   margin-top: 60px;
 }
-.sponsors img {
+.sponsors img,
+.sponsorLogo {
   margin: 40px 40px;
+}
+.parnterTitle {
+  font-family: Integral CF, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 0.02em;
+
+  line-height: 100%;
+  text-align: center;
+  /* identical to box height, or 25px */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  mix-blend-mode: overlay;
 }
 .page2 {
   color: #05d5b8;
@@ -355,7 +375,7 @@ a {
 .page25 {
   // color: #05d5b8;
   background: linear-gradient(180deg, #3d4448 0%, #1c1f21 100%);
-  padding: 120px 0 0px 0 !important;
+  padding: 120px 0 40px 0 !important;
   position: relative;
   // overflow-y: hidden;
 }
