@@ -17,12 +17,14 @@
 }
 
 .igniteLogo img:last-child {
+  display: none;
   opacity: 0;
   -webkit-transition: all 0.4 cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.4 cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .igniteLogo:hover img:last-child {
+  display: block;
   opacity: 1;
   -webkit-transform: translate(0px, 0);
           transform: translate(0px, 0);
