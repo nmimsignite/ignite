@@ -1,3 +1,17 @@
+// var images = new Array();
+// images[0] = "./assets/ignitelogo.svg";
+// images[1] = "./assets/ignitelogoGlitched.svg";
+// setInterval("changeImage()", 1000);
+// var x = 0;
+
+// function changeImage() {
+//   document.getElementById("logo").src = images[x];
+//   x++;
+//   if (images.length == x) {
+//     x = 0;
+//   }
+// }
+
 function animatePages() {
   console.log("Works.");
 

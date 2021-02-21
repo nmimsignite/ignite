@@ -13,6 +13,34 @@
   background: url("https://lkp.dispendik.surabaya.go.id/assets/loading.gif") 50%
     50% no-repeat rgb(249, 249, 249);
 }
+// .igniteLogo:hover path {
+//   transform: translate(0, -20px);
+// }
+// .igniteLogo path {
+//   transform: translate(0, 0px);
+// }
+.igniteLogo img:last-child {
+  // opacity: none;
+  // background: url("./assets/ignitelogo.svg");
+
+  opacity: 0;
+  transition: all 0.4 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.igniteLogo:hover img:last-child {
+  // display: block;
+  opacity: 1;
+  transform: translate(0px, 0);
+  transition: all 0.4 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 1;
+  z-index: 5;
+}
+.igniteLogo:hover img:first-child {
+  transition: all 0.4 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+
+  display: none;
+}
+// }
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@800&display=swap");
 body {
   // background: linear-gradient(
