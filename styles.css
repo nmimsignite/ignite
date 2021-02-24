@@ -458,6 +458,12 @@ a {
   overflow: hidden;
 }
 
+.scifi {
+  background: #6f6f6f;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 .techTalks {
   background: linear-gradient(148deg, #00938a 9.18%, #00a098 90.83%);
   min-height: 100vh;
