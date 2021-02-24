@@ -16,6 +16,33 @@
   background: url("https://lkp.dispendik.surabaya.go.id/assets/loading.gif") 50% 50% no-repeat #f9f9f9;
 }
 
+.moveUpDown {
+  -webkit-animation: MoveUpDown 3s linear infinite;
+          animation: MoveUpDown 3s linear infinite;
+}
+
+@-webkit-keyframes MoveUpDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+}
+
+@keyframes MoveUpDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+}
+
 .hoverUp:hover {
   -webkit-transform: translate(0, -10px);
           transform: translate(0, -10px);

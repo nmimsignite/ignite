@@ -13,6 +13,22 @@
   background: url("https://lkp.dispendik.surabaya.go.id/assets/loading.gif") 50%
     50% no-repeat rgb(249, 249, 249);
 }
+.moveUpDown {
+  animation: MoveUpDown 3s linear infinite;
+  // position: absolute;
+  // left: 0;
+  // bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+}
+
 // .igniteLogo:hover path {
 //   transform: translate(0, -20px);
 // }
@@ -501,6 +517,7 @@ a {
   left: 0px;
   top: -100px;
   z-index: 1;
+  // animation: MoveUpDown 2s linear infinite;
 }
 .tagline {
   // right: 31.18%;
