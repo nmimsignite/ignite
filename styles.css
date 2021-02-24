@@ -1048,7 +1048,8 @@ a {
   .gaming,
   .techTalks,
   .creative,
-  .memeService {
+  .memeService,
+  .scifi {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
