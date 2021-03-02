@@ -202,7 +202,7 @@ h3 {
 }
 
 .emailCard {
-  width: 60vw;
+  width: 35vw;
   height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,7 +217,7 @@ h3 {
   font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -236,7 +236,68 @@ h3 {
 }
 
 .emailCard:hover {
-  background: linear-gradient(144.69deg, #f6bf4a 1.56%, #ec622d 35.7%, #dc395e 64.16%, #c04d95 92.61%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0796c2), to(#006c8e));
+  background: linear-gradient(180deg, #0796c2 0%, #006c8e 100%);
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.discordCard {
+  width: 35vw;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 60px;
+  margin-top: 0px;
+  /* yerow */
+  border-radius: 15px;
+  position: relative;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.discordCard:hover .socialcardText {
+  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.discordCard:hover svg {
+  top: 40px;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.discordCard:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7289da), to(#4f66b6));
+  background: linear-gradient(180deg, #7289da 0%, #4f66b6 100%);
   -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
   transition: opacity 175ms ease, -webkit-transform 175ms ease;
   transition: transform 175ms ease, opacity 175ms ease;
@@ -828,7 +889,7 @@ a {
   top: -50px;
   left: 0;
   text-align: center;
-  font-family: Circular Std;
+  font-family: Circular Std, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -843,6 +904,12 @@ a {
 }
 
 @media screen and (max-width: 980px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .sponsors {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -887,9 +954,23 @@ a {
   .massiveText {
     font-size: 8vw;
   }
-  .emailCard {
+  .emailCard,
+  .discordCard {
+    cursor: pointer;
     width: 90vw;
     margin-bottom: 60px;
+  }
+  .emailCard {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0796c2), to(#006c8e));
+    background: linear-gradient(180deg, #0796c2 0%, #006c8e 100%);
+  }
+  .discordCard {
+    background: -webkit-gradient(linear, left top, left bottom, from(#7289da), to(#4f66b6));
+    background: linear-gradient(180deg, #7289da 0%, #4f66b6 100%);
+  }
+  .emailCard h1,
+  .discordCard h1 {
+    font-size: 30px;
   }
   .underlineEvent {
     position: absolute;
