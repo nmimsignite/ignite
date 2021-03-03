@@ -841,6 +841,7 @@ a {
   transition: transform 175ms ease, opacity 175ms ease,
     -webkit-transform 175ms ease;
   display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 980px) {
