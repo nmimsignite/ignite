@@ -197,8 +197,12 @@ h3 {
   background: #1977f3;
 }
 
+.wame {
+  position: relative;
+}
+
 .wame svg {
-  width: 400px;
+  width: 450px;
   -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
   transition: opacity 175ms ease, -webkit-transform 175ms ease;
   transition: transform 175ms ease, opacity 175ms ease;
@@ -220,6 +224,17 @@ h3 {
 
 .wame:hover svg #waGreen {
   fill: #43c554;
+}
+
+.wame .newPageIcon {
+  display: none;
+  position: absolute;
+  top: -20px;
+  right: -210px;
+}
+
+.wame:hover .newPageIcon {
+  display: block;
 }
 
 .instagram:hover {
@@ -297,6 +312,15 @@ h3 {
   /* yerow */
   border-radius: 15px;
   position: relative;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.emailCard:hover .socialcardText {
+  display: block;
+  opacity: 1;
   -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
   transition: opacity 175ms ease, -webkit-transform 175ms ease;
   transition: transform 175ms ease, opacity 175ms ease;

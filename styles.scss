@@ -207,8 +207,11 @@ h3 {
 //   background: linear-gradient(215.89deg, #54cf61 17.12%, #29b53f 84.82%);
 //   border-radius: 15px;
 // }
+.wame {
+  position: relative;
+}
 .wame svg {
-  width: 400px;
+  width: 450px;
   transition: transform 175ms ease, opacity 175ms ease;
 }
 .wame svg #waGreen {
@@ -220,6 +223,15 @@ h3 {
 }
 .wame:hover svg #waGreen {
   fill: #43c554;
+}
+.wame .newPageIcon {
+  display: none;
+  position: absolute;
+  top: -20px;
+  right: -210px;
+}
+.wame:hover .newPageIcon {
+  display: block;
 }
 .instagram:hover {
   // box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
@@ -304,6 +316,11 @@ h3 {
 
   border-radius: 15px;
   position: relative;
+  transition: transform 175ms ease, opacity 175ms ease;
+}
+.emailCard:hover .socialcardText {
+  display: block;
+  opacity: 1;
   transition: transform 175ms ease, opacity 175ms ease;
 }
 .discordCard:hover .socialcardText {
