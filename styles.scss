@@ -99,6 +99,7 @@ h3 {
 .page4 {
   background: #555555;
   padding: 120px 0 0px 0 !important;
+  position: relative;
 }
 .socialCards {
   display: grid;
@@ -879,6 +880,8 @@ a {
     -webkit-transform 175ms ease;
   display: flex;
   align-items: center;
+  // mix-blend-mode: normal;
+  // filter: saturate(150%);
 }
 
 @media screen and (max-width: 980px) {
