@@ -1099,6 +1099,9 @@ a {
     text-align: center !important;
     font-size: 2rem;
   }
+  .apply-button {
+    margin-top: 20px;
+  }
   .floatingDate {
     top: -50px;
     position: absolute;
