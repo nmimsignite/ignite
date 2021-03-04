@@ -202,6 +202,25 @@ h3 {
 
   background: #1977f3;
 }
+// .wame {
+//   padding: 0 30px;
+//   background: linear-gradient(215.89deg, #54cf61 17.12%, #29b53f 84.82%);
+//   border-radius: 15px;
+// }
+.wame svg {
+  width: 400px;
+  transition: transform 175ms ease, opacity 175ms ease;
+}
+.wame svg #waGreen {
+  fill: none;
+}
+.wame:hover svg {
+  transform: translate(0, -20px);
+  transition: transform 175ms ease, opacity 175ms ease;
+}
+.wame:hover svg #waGreen {
+  fill: #43c554;
+}
 .instagram:hover {
   // box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
   background: radial-gradient(

@@ -197,6 +197,31 @@ h3 {
   background: #1977f3;
 }
 
+.wame svg {
+  width: 400px;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.wame svg #waGreen {
+  fill: none;
+}
+
+.wame:hover svg {
+  -webkit-transform: translate(0, -20px);
+          transform: translate(0, -20px);
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.wame:hover svg #waGreen {
+  fill: #43c554;
+}
+
 .instagram:hover {
   background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #ffdd55 0%, #ffdd55 10%, #ff543e 50%, #c837ab 100%);
 }
