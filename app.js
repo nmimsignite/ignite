@@ -57,24 +57,24 @@ function animatePages() {
     //   "power4.inOut",
     //   "-=0.6"
     // );
-    slide.fromTo(
-      ".logo",
-      0.6,
-      {
-        y: "50%",
-        // x: "100%",
-        scale: 1,
-        opacity: 0,
-      },
-      {
-        y: "0%",
-        // x: "0%",
-        scale: 1,
-        autoAlpha: 1,
-        ease: "power3.inOut",
-      }
-      //   "power3.inOut"
-    );
+    // slide.fromTo(
+    //   ".logo",
+    //   0.6,
+    //   {
+    //     y: "50%",
+    //     // x: "100%",
+    //     scale: 1,
+    //     opacity: 0,
+    //   },
+    //   {
+    //     y: "0%",
+    //     // x: "0%",
+    //     scale: 1,
+    //     autoAlpha: 1,
+    //     ease: "power3.inOut",
+    //   }
+    //   //   "power3.inOut"
+    // );
     slide.fromTo(
       RevealTagline1,
       0.3,
@@ -421,9 +421,9 @@ function skewEffect() {
   gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
 }
 
-animatePages();
-animateThings();
-skewEffect();
+document.addEventListener("DOMContentLoaded", animatePages());
+document.addEventListener("DOMContentLoaded", animateThings());
+document.addEventListener("DOMContentLoaded", skewEffect());
 
 barba.init({
   views: [
@@ -492,46 +492,4 @@ barba.init({
     },
   ],
 });
-
-// $("#ex1").modal({
-//   fadeDuration: 1000,
-//   // fadeDelay: 0.5,
-// });
-
-// $("#manual-ajax").click(function (event) {
-//   event.preventDefault();
-//   this.blur(); // Manually remove focus from clicked link.
-//   $.get(this.href, function (html) {
-//     $(html).appendTo("body").modal();
-//   });
-// });
-
-// $("#fade").modal({
-//   fadeDuration: 100,
-// });
-
-// $(".twitter").mouseenter(function () {
-//   $(".page4").css("background-color", "#2aa9e0").fadeIn("slow");
-// });
-
-// $(".twitter").mouseleave(function () {
-//   $(".page4").css("background-color", "black");
-// });
-
-// $(".youtube").mouseenter(function () {
-//   $(".page4").css("background-color", "#e62e2e");
-// });
-// $(".youtube").mouseleave(function () {
-//   $(".page4").css("background-color", " black");
-// });
-
-// $(".instagram").mouseenter(function () {
-//   $(".page4").css("background", "#C837AB");
-// });
-// $(".instagram").mouseleave(function () {
-//   $(".page4").css("background", "black");
-// });
-
-// $(".youtube").mouseleave(function () {
-//   $(".page4").css("background-color", " black");
-// });
+gsap.config({ nullTargetWarn: false });
