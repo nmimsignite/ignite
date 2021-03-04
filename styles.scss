@@ -1022,7 +1022,18 @@ a {
     // padding-left: 20px;
   }
   .floatingDate {
-    font-size: 1.5rem;
+    top: -50px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // transform: translate(-50%, -50%);
   }
   .subhead {
     text-align: center;
