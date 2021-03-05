@@ -470,7 +470,7 @@ barba.init({
         // });
       },
       enter({ current, next }) {
-        // window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
 
         let done = this.async();
         const t1 = gsap.timeline({ defaults: { ease: "power3.inOut" } });
