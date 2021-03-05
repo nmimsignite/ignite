@@ -568,6 +568,13 @@ a {
   overflow: hidden;
 }
 
+.blockbuster {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ec622d), to(#cd420c));
+  background: linear-gradient(180deg, #ec622d 0%, #cd420c 100%);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 .scifi {
   background: #6f6f6f;
   min-height: 100vh;
@@ -1227,7 +1234,8 @@ a {
   .techTalks,
   .creative,
   .memeService,
-  .scifi {
+  .scifi,
+  .blockbuster {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
