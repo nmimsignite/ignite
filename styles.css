@@ -199,10 +199,36 @@ h3 {
 
 .wame {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.wameBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
 }
 
 .wame svg {
-  width: 450px;
   -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
   transition: opacity 175ms ease, -webkit-transform 175ms ease;
   transition: transform 175ms ease, opacity 175ms ease;
@@ -213,7 +239,7 @@ h3 {
   fill: none;
 }
 
-.wame:hover svg {
+.wame:hover .wameBlock {
   -webkit-transform: translate(0, -20px);
           transform: translate(0, -20px);
   -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
@@ -560,6 +586,17 @@ a {
   background: linear-gradient(180deg, #cb4580 0%, #cb1e52 100%);
   min-height: 100vh;
   overflow: hidden;
+}
+
+.subscribe {
+  font-family: Circular Std, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 100%;
+  /* identical to box height, or 40px */
+  letter-spacing: -0.015em;
+  color: #ffffff;
 }
 
 .creative {
@@ -963,6 +1000,12 @@ a {
 }
 
 @media screen and (max-width: 980px) {
+  .wameBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -210,15 +210,26 @@ h3 {
 // }
 .wame {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.wameBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 175ms ease, opacity 175ms ease;
 }
 .wame svg {
-  width: 450px;
+  // width: 450px;
   transition: transform 175ms ease, opacity 175ms ease;
 }
 .wame svg #waGreen {
   fill: none;
 }
-.wame:hover svg {
+.wame:hover .wameBlock {
   transform: translate(0, -20px);
   transition: transform 175ms ease, opacity 175ms ease;
 }
@@ -531,6 +542,20 @@ a {
   background: linear-gradient(180deg, #cb4580 0%, #cb1e52 100%);
   min-height: 100vh;
   overflow: hidden;
+}
+
+.subscribe {
+  font-family: Circular Std, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 100%;
+  /* identical to box height, or 40px */
+
+  letter-spacing: -0.015em;
+
+  color: #ffffff;
 }
 .creative {
   background: #8e0180;
@@ -890,6 +915,9 @@ a {
 }
 
 @media screen and (max-width: 980px) {
+  .wameBlock {
+    flex-direction: column;
+  }
   .row {
     flex-direction: column;
   }
