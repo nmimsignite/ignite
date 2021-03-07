@@ -1022,6 +1022,9 @@ a {
 }
 
 @media screen and (max-width: 980px) {
+  .pd-30 a {
+    margin: 0px 16px;
+  }
   .aboutText {
     width: 80vw;
   }
