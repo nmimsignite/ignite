@@ -760,6 +760,7 @@ a {
 
 .buttons {
   // justify-content: space-between;
+
   align-items: center;
 }
 
@@ -1069,6 +1070,7 @@ a {
   }
   .buttons {
     flex-direction: column;
+    margin: 20px 0 0 0;
   }
   .eventNameTitle {
     width: 80vw;

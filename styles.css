@@ -1161,6 +1161,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 20px 0 0 0;
   }
   .eventNameTitle {
     width: 80vw;
