@@ -813,7 +813,8 @@ a {
   margin: auto 30px;
 }
 .eventDetailPage {
-  padding-top: 90px;
+  // padding-top: 90px;
+  padding: 90px 0px 40px 80px;
 }
 .cardHead {
   font-family: "Integral CF", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -832,7 +833,7 @@ a {
 .yelloCardText {
   color: #861414;
 }
-.gameCardHead {
+.redCard {
   color: #cb2d63;
 }
 .gameCardText {

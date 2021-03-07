@@ -899,7 +899,7 @@ a {
 }
 
 .eventDetailPage {
-  padding-top: 90px;
+  padding: 90px 0px 40px 80px;
 }
 
 .cardHead {
@@ -920,7 +920,7 @@ a {
   color: #861414;
 }
 
-.gameCardHead {
+.redCard {
   color: #cb2d63;
 }
 
