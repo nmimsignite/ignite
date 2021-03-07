@@ -91,7 +91,7 @@ body {
   width: 60vw;
   /* or 30px */
 
-  text-align: justify;
+  text-align: left;
   letter-spacing: -0.015em;
 
   color: rgba(255, 255, 255, 0.8);
@@ -109,8 +109,10 @@ h3 {
   // font-size: 80px;
 }
 .page3 {
-  overflow: hidden;
+  // overflow: hidden;
   background: #194bcc;
+  padding: 120px 0 0px 0 !important;
+  position: relative;
 }
 .page4 {
   background: #555555;
@@ -667,6 +669,14 @@ a {
   z-index: 1;
   // animation: MoveUpDown 2s linear infinite;
 }
+.mike2 {
+  position: absolute;
+  // height: 526px;
+  width: 250px;
+  left: 0px;
+  top: -100px;
+  z-index: 2;
+}
 .tagline {
   // right: 31.18%;
   margin-top: 60px;
@@ -932,6 +942,9 @@ a {
 }
 
 @media screen and (max-width: 980px) {
+  .aboutText {
+    width: 80vw;
+  }
   .wameBlock {
     flex-direction: column;
   }
@@ -1150,10 +1163,12 @@ a {
     font-size: 1.5rem;
     cursor: default !important;
   }
-  .mike {
+  .mike,
+  .mike2 {
     width: 140px;
     top: -10px;
   }
+
   .mobileNavbar {
     display: block;
     position: fixed;
