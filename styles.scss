@@ -1252,6 +1252,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
+}
+.detailCard svg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 .detailRed {
   background: linear-gradient(

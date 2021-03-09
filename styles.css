@@ -1367,6 +1367,13 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  position: relative;
+}
+
+.detailCard svg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .detailRed {
