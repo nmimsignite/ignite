@@ -1214,10 +1214,10 @@ a {
     font-size: 2rem;
   }
   .apply-button {
-    margin-top: 20px;
+    margin: 20px 0 !important;
   }
   .devfolio-button-iframe {
-    margin: 20px 0;
+    margin: 20px 0 !important;
   }
   .floatingDate {
     top: -50px;
