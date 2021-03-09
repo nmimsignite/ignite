@@ -1348,6 +1348,142 @@ a {
           animation: all 2s ease-in-out;
 }
 
+.detailCard {
+  width: 479px;
+  height: 482px;
+  left: 0px;
+  top: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6289d8), to(#315dec));
+  background: linear-gradient(180deg, #6289d8 0%, #315dec 100%);
+  border-radius: 30px;
+  margin: 40px 30px 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.detailRed {
+  background: linear-gradient(144.69deg, #f6bf4a 1.56%, #ec622d 35.7%, #dc395e 64.16%, #c04d95 92.61%);
+}
+
+.detailHead {
+  font-family: "Integral CF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 100%;
+  /* identical to box height, or 30px */
+  color: rgba(255, 255, 255, 0.6);
+  padding: 30px 0 0 30px;
+}
+
+.detailText {
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 100%;
+  /* or 30px */
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 10px 30px;
+}
+
+.detailText .main {
+  font-weight: 500;
+}
+
+.min100vh {
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.detailText .sub {
+  opacity: 0.7;
+}
+
+.accordion {
+  color: #fff;
+  background: #616161;
+  border-radius: 30px;
+  padding: 18px 30px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 70vw;
+  cursor: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100px;
+  font-family: "Integral CF", "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 100%;
+  margin: 10px 0;
+  padding: 20px 20px;
+  /* or 30px */
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.active,
+.accordion:hover {
+  transition: all 175ms ease, -webkit-all 175ms ease;
+  background: linear-gradient(144.69deg, #f6bf4a 1.56%, #ec622d 35.7%, #dc395e 64.16%, #c04d95 92.61%);
+}
+
+.accordion:after {
+  content: "\002B";
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  background-color: white;
+  background-color: #303030;
+  width: 70vw;
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 100%;
+  margin-bottom: 20px;
+  border-radius: 0 0 30px 30px;
+  padding: 0px 40px;
+  /* or 30px */
+  color: rgba(255, 255, 255, 0.7);
+}
+
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0% 50%;
