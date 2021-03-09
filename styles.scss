@@ -943,6 +943,24 @@ a {
 }
 
 @media screen and (max-width: 980px) {
+  .detailCard {
+    width: 90vw !important;
+    height: unset !important;
+    padding: auto auto 60px auto;
+  }
+  .detailText {
+    margin-bottom: 30px;
+  }
+
+  .accordion {
+    font-size: 1.4rem !important;
+    width: 80vw !important;
+  }
+  .panel {
+    padding: 20px;
+    font-size: 1.2rem !important;
+    width: 100vw !important;
+  }
   .pd-30 a {
     margin: 0px 16px;
   }
