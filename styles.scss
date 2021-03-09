@@ -1104,7 +1104,8 @@ a {
   }
   .buttons {
     flex-direction: column;
-    margin: 20px 0 0 0;
+    margin: 20px 0;
+    padding: 10px 0;
   }
   .eventNameTitle {
     width: 80vw;
