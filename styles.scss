@@ -616,6 +616,9 @@ a {
 
   color: #ffffff;
 }
+.eventDetailPage .subText {
+  font-size: 25px;
+}
 .eventsFlow {
   font-family: Integral CF, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -841,7 +844,7 @@ a {
 }
 .eventDetailPage {
   // padding-top: 90px;
-  padding: 90px 0px 40px 80px;
+  padding: 90px 0px 120px 80px;
 }
 .bounceContainer {
   position: absolute;
@@ -923,6 +926,7 @@ a {
 }
 .relative {
   position: relative;
+  // padding-bottom: 80px;
 }
 .floatingDate {
   position: absolute;
@@ -964,6 +968,7 @@ a {
   line-height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 40px 40px;
   // margin: 40px;
   text-align: center;
@@ -972,8 +977,9 @@ a {
   width: 250px;
 }
 .themeTopic {
-  opacity: 0;
+  opacity: 1;
   margin-top: 10px;
+  font-size: 25px;
 }
 .theme:hover {
   background: #525252;
@@ -1319,7 +1325,7 @@ a {
 }
 .detailCard {
   width: 479px;
-  height: 482px;
+  height: 400px;
   left: 0px;
   top: 0px;
 
@@ -1362,7 +1368,7 @@ a {
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 30px;
+  // font-size: 30px;
   line-height: 100%;
   /* or 30px */
 
@@ -1371,9 +1377,11 @@ a {
   color: #ffffff;
   margin-top: 20px;
   padding: 10px 30px;
+  font-size: 25px;
 }
 .detailText .main {
   font-weight: 500;
+  font-size: 25px;
 }
 .min100vh {
   min-height: 100vh;
@@ -1391,7 +1399,6 @@ a {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
   transition: 0.4s;
   width: 70vw;
   cursor: none;
@@ -1399,17 +1406,17 @@ a {
   align-items: center;
   justify-content: space-between;
   min-height: 100px;
-  font-family: "Integral CF", "Circular Std", -apple-system, BlinkMacSystemFont,
+  font-family: "Epilogue", "Circular Std", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 100%;
   margin: 10px 0;
   padding: 20px 20px;
   /* or 30px */
-
+  letter-spacing: -0.015em;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1418,11 +1425,11 @@ a {
   transition: all 175ms ease, -webkit-all 175ms ease;
   // background-color: #ccc;
   background: linear-gradient(
-    144.69deg,
-    #f6bf4a 1.56%,
-    #ec622d 35.7%,
-    #dc395e 64.16%,
-    #c04d95 92.61%
+    143.19deg,
+    #f6bf4a -4.41%,
+    #ec622d 20.24%,
+    #dc395e 62.41%,
+    #c04d95 92.78%
   );
   // .active {
   //   margin: 0px 0;
@@ -1463,7 +1470,7 @@ a {
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 100%;
   margin-bottom: 20px;
   border-radius: 0 0 30px 30px;
