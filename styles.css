@@ -583,7 +583,7 @@ a {
 }
 
 .purpleBox:hover {
-  width: 340px;
+  width: 320px;
   -webkit-transition: width 175ms ease, opacity 175ms ease;
   transition: width 175ms ease, opacity 175ms ease;
 }
@@ -591,6 +591,7 @@ a {
 .purpleBox {
   -webkit-transition: width 175ms ease, opacity 175ms ease;
   transition: width 175ms ease, opacity 175ms ease;
+  position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(#7875f4), to(#3c39d0));
   background: linear-gradient(180deg, #7875f4 0%, #3c39d0 100%);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1817,5 +1818,482 @@ body .cursor__ball circle {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+}
+
+@-webkit-keyframes bang {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes bang {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.purpleBox i {
+  position: absolute;
+  display: block;
+  right: 50%;
+  top: 0;
+  width: 3px;
+  height: 5px;
+  background: red;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(1) {
+  -webkit-transform: translate3d(67px, -95px, 0) rotate(218deg);
+          transform: translate3d(67px, -95px, 0) rotate(218deg);
+  background: #00ff55;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(2) {
+  -webkit-transform: translate3d(-88px, -70px, 0) rotate(44deg);
+          transform: translate3d(-88px, -70px, 0) rotate(44deg);
+  background: #bb00ff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(3) {
+  -webkit-transform: translate3d(24px, -66px, 0) rotate(43deg);
+          transform: translate3d(24px, -66px, 0) rotate(43deg);
+  background: #48ff00;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(4) {
+  -webkit-transform: translate3d(-52px, -87px, 0) rotate(154deg);
+          transform: translate3d(-52px, -87px, 0) rotate(154deg);
+  background: #00ffbb;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(5) {
+  -webkit-transform: translate3d(-79px, -77px, 0) rotate(59deg);
+          transform: translate3d(-79px, -77px, 0) rotate(59deg);
+  background: #a2ff00;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(6) {
+  -webkit-transform: translate3d(-83px, -65px, 0) rotate(298deg);
+          transform: translate3d(-83px, -65px, 0) rotate(298deg);
+  background: #95ff00;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(7) {
+  -webkit-transform: translate3d(49px, -77px, 0) rotate(132deg);
+          transform: translate3d(49px, -77px, 0) rotate(132deg);
+  background: #b300ff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(8) {
+  -webkit-transform: translate3d(3px, -51px, 0) rotate(185deg);
+          transform: translate3d(3px, -51px, 0) rotate(185deg);
+  background: #00ff4d;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(9) {
+  -webkit-transform: translate3d(76px, -88px, 0) rotate(179deg);
+          transform: translate3d(76px, -88px, 0) rotate(179deg);
+  background: #ff00f2;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(10) {
+  -webkit-transform: translate3d(40px, -89px, 0) rotate(103deg);
+          transform: translate3d(40px, -89px, 0) rotate(103deg);
+  background: #ff3300;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(11) {
+  -webkit-transform: translate3d(-24px, -85px, 0) rotate(229deg);
+          transform: translate3d(-24px, -85px, 0) rotate(229deg);
+  background: #62ff00;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(12) {
+  -webkit-transform: translate3d(-85px, -79px, 0) rotate(173deg);
+          transform: translate3d(-85px, -79px, 0) rotate(173deg);
+  background: #00ffd9;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(13) {
+  -webkit-transform: translate3d(10px, -82px, 0) rotate(94deg);
+          transform: translate3d(10px, -82px, 0) rotate(94deg);
+  background: #0077ff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(14) {
+  -webkit-transform: translate3d(51px, -82px, 0) rotate(75deg);
+          transform: translate3d(51px, -82px, 0) rotate(75deg);
+  background: #ff0009;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(15) {
+  -webkit-transform: translate3d(-56px, -97px, 0) rotate(318deg);
+          transform: translate3d(-56px, -97px, 0) rotate(318deg);
+  background: #00a6ff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(16) {
+  -webkit-transform: translate3d(-12px, -99px, 0) rotate(138deg);
+          transform: translate3d(-12px, -99px, 0) rotate(138deg);
+  background: #00e1ff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(17) {
+  -webkit-transform: translate3d(72px, -98px, 0) rotate(192deg);
+          transform: translate3d(72px, -98px, 0) rotate(192deg);
+  background: #00ff2f;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(18) {
+  -webkit-transform: translate3d(87px, -82px, 0) rotate(225deg);
+          transform: translate3d(87px, -82px, 0) rotate(225deg);
+  background: #ff2200;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(19) {
+  -webkit-transform: translate3d(-90px, -74px, 0) rotate(252deg);
+          transform: translate3d(-90px, -74px, 0) rotate(252deg);
+  background: #ff00c8;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(20) {
+  -webkit-transform: translate3d(68px, -97px, 0) rotate(215deg);
+          transform: translate3d(68px, -97px, 0) rotate(215deg);
+  background: #62ff00;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(21) {
+  -webkit-transform: translate3d(-44px, -80px, 0) rotate(225deg);
+          transform: translate3d(-44px, -80px, 0) rotate(225deg);
+  background: darkorange;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(22) {
+  -webkit-transform: translate3d(55px, -83px, 0) rotate(92deg);
+          transform: translate3d(55px, -83px, 0) rotate(92deg);
+  background: aqua;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(23) {
+  -webkit-transform: translate3d(32px, -60px, 0) rotate(278deg);
+          transform: translate3d(32px, -60px, 0) rotate(278deg);
+  background: #00eaff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(24) {
+  -webkit-transform: translate3d(32px, -61px, 0) rotate(173deg);
+          transform: translate3d(32px, -61px, 0) rotate(173deg);
+  background: #0095ff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(25) {
+  -webkit-transform: translate3d(82px, -71px, 0) rotate(210deg);
+          transform: translate3d(82px, -71px, 0) rotate(210deg);
+  background: #ff1500;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(26) {
+  -webkit-transform: translate3d(13px, -74px, 0) rotate(198deg);
+          transform: translate3d(13px, -74px, 0) rotate(198deg);
+  background: #00ff37;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(27) {
+  -webkit-transform: translate3d(76px, -84px, 0) rotate(55deg);
+          transform: translate3d(76px, -84px, 0) rotate(55deg);
+  background: #c8ff00;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(28) {
+  -webkit-transform: translate3d(-53px, -68px, 0) rotate(71deg);
+          transform: translate3d(-53px, -68px, 0) rotate(71deg);
+  background: #6f00ff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(29) {
+  -webkit-transform: translate3d(-47px, -85px, 0) rotate(125deg);
+          transform: translate3d(-47px, -85px, 0) rotate(125deg);
+  background: #ff002f;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(30) {
+  -webkit-transform: translate3d(51px, -68px, 0) rotate(281deg);
+          transform: translate3d(51px, -68px, 0) rotate(281deg);
+  background: #44ff00;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(31) {
+  -webkit-transform: translate3d(-1px, -54px, 0) rotate(84deg);
+          transform: translate3d(-1px, -54px, 0) rotate(84deg);
+  background: #66ff00;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(32) {
+  -webkit-transform: translate3d(-15px, -95px, 0) rotate(31deg);
+          transform: translate3d(-15px, -95px, 0) rotate(31deg);
+  background: #0004ff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(33) {
+  -webkit-transform: translate3d(-53px, -83px, 0) rotate(346deg);
+          transform: translate3d(-53px, -83px, 0) rotate(346deg);
+  background: #6200ff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(34) {
+  -webkit-transform: translate3d(11px, -88px, 0) rotate(288deg);
+          transform: translate3d(11px, -88px, 0) rotate(288deg);
+  background: #ff002f;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(35) {
+  -webkit-transform: translate3d(-14px, -83px, 0) rotate(102deg);
+          transform: translate3d(-14px, -83px, 0) rotate(102deg);
+  background: #0073ff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(36) {
+  -webkit-transform: translate3d(29px, -66px, 0) rotate(199deg);
+          transform: translate3d(29px, -66px, 0) rotate(199deg);
+  background: #7300ff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(37) {
+  -webkit-transform: translate3d(-47px, -63px, 0) rotate(117deg);
+          transform: translate3d(-47px, -63px, 0) rotate(117deg);
+  background: #00ff2b;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(38) {
+  -webkit-transform: translate3d(55px, -79px, 0) rotate(180deg);
+          transform: translate3d(55px, -79px, 0) rotate(180deg);
+  background: #0022ff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(39) {
+  -webkit-transform: translate3d(86px, -79px, 0) rotate(78deg);
+          transform: translate3d(86px, -79px, 0) rotate(78deg);
+  background: #ff00d9;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(40) {
+  -webkit-transform: translate3d(15px, -51px, 0) rotate(100deg);
+          transform: translate3d(15px, -51px, 0) rotate(100deg);
+  background: #33ff00;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(41) {
+  -webkit-transform: translate3d(76px, -85px, 0) rotate(26deg);
+          transform: translate3d(76px, -85px, 0) rotate(26deg);
+  background: #ff007b;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(42) {
+  -webkit-transform: translate3d(55px, -67px, 0) rotate(64deg);
+          transform: translate3d(55px, -67px, 0) rotate(64deg);
+  background: #2b00ff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(43) {
+  -webkit-transform: translate3d(-7px, -62px, 0) rotate(89deg);
+          transform: translate3d(-7px, -62px, 0) rotate(89deg);
+  background: #fff200;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(44) {
+  -webkit-transform: translate3d(49px, -78px, 0) rotate(141deg);
+          transform: translate3d(49px, -78px, 0) rotate(141deg);
+  background: #ff1e00;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(45) {
+  -webkit-transform: translate3d(-54px, -83px, 0) rotate(135deg);
+          transform: translate3d(-54px, -83px, 0) rotate(135deg);
+  background: #00ffa2;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(46) {
+  -webkit-transform: translate3d(74px, -77px, 0) rotate(197deg);
+          transform: translate3d(74px, -77px, 0) rotate(197deg);
+  background: #ff5100;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(47) {
+  -webkit-transform: translate3d(90px, -91px, 0) rotate(195deg);
+          transform: translate3d(90px, -91px, 0) rotate(195deg);
+  background: #00ff5e;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(48) {
+  -webkit-transform: translate3d(-56px, -83px, 0) rotate(337deg);
+          transform: translate3d(-56px, -83px, 0) rotate(337deg);
+  background: #00ff95;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(49) {
+  -webkit-transform: translate3d(69px, -60px, 0) rotate(320deg);
+          transform: translate3d(69px, -60px, 0) rotate(320deg);
+  background: #00fff2;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+
+.purpleBox:hover i:nth-of-type(50) {
+  -webkit-transform: translate3d(82px, -81px, 0) rotate(115deg);
+          transform: translate3d(82px, -81px, 0) rotate(115deg);
+  background: #0073ff;
+  -webkit-animation: bang 700ms ease-out forwards;
+          animation: bang 700ms ease-out forwards;
+  opacity: 0;
 }
 /*# sourceMappingURL=styles.css.map */

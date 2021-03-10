@@ -538,12 +538,12 @@ a {
   transition: transform 175ms ease, opacity 175ms ease;
 }
 .purpleBox:hover {
-  width: 340px;
+  width: 320px;
   transition: width 175ms ease, opacity 175ms ease;
 }
 .purpleBox {
   transition: width 175ms ease, opacity 175ms ease;
-
+  position: relative;
   background: linear-gradient(180deg, #7875f4 0%, #3c39d0 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px 0 0 30px;
@@ -1685,4 +1685,333 @@ body .cursor__ball circle {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+}
+
+// .purpleBox {
+//   width: 240px;
+//   margin: 150px auto 0;
+//   text-align: center;
+//   padding: 10px 0;
+//   cursor: pointer;
+//   position: relative;
+// }
+// .purpleBox span {
+//   color: #333;
+//   font-size: 0.9em;
+// }
+@keyframes bang {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.purpleBox i {
+  position: absolute;
+  display: block;
+  right: 50%;
+  top: 0;
+  width: 3px;
+  height: 5px;
+  background: red;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(1) {
+  transform: translate3d(67px, -95px, 0) rotate(218deg);
+  background: #00ff55;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(2) {
+  transform: translate3d(-88px, -70px, 0) rotate(44deg);
+  background: #bb00ff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(3) {
+  transform: translate3d(24px, -66px, 0) rotate(43deg);
+  background: #48ff00;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(4) {
+  transform: translate3d(-52px, -87px, 0) rotate(154deg);
+  background: #00ffbb;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(5) {
+  transform: translate3d(-79px, -77px, 0) rotate(59deg);
+  background: #a2ff00;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(6) {
+  transform: translate3d(-83px, -65px, 0) rotate(298deg);
+  background: #95ff00;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(7) {
+  transform: translate3d(49px, -77px, 0) rotate(132deg);
+  background: #b300ff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(8) {
+  transform: translate3d(3px, -51px, 0) rotate(185deg);
+  background: #00ff4d;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(9) {
+  transform: translate3d(76px, -88px, 0) rotate(179deg);
+  background: #ff00f2;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(10) {
+  transform: translate3d(40px, -89px, 0) rotate(103deg);
+  background: #ff3300;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(11) {
+  transform: translate3d(-24px, -85px, 0) rotate(229deg);
+  background: #62ff00;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(12) {
+  transform: translate3d(-85px, -79px, 0) rotate(173deg);
+  background: #00ffd9;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(13) {
+  transform: translate3d(10px, -82px, 0) rotate(94deg);
+  background: #0077ff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(14) {
+  transform: translate3d(51px, -82px, 0) rotate(75deg);
+  background: #ff0009;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(15) {
+  transform: translate3d(-56px, -97px, 0) rotate(318deg);
+  background: #00a6ff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(16) {
+  transform: translate3d(-12px, -99px, 0) rotate(138deg);
+  background: #00e1ff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(17) {
+  transform: translate3d(72px, -98px, 0) rotate(192deg);
+  background: #00ff2f;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(18) {
+  transform: translate3d(87px, -82px, 0) rotate(225deg);
+  background: #ff2200;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(19) {
+  transform: translate3d(-90px, -74px, 0) rotate(252deg);
+  background: #ff00c8;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(20) {
+  transform: translate3d(68px, -97px, 0) rotate(215deg);
+  background: #62ff00;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(21) {
+  transform: translate3d(-44px, -80px, 0) rotate(225deg);
+  background: darkorange;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(22) {
+  transform: translate3d(55px, -83px, 0) rotate(92deg);
+  background: aqua;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(23) {
+  transform: translate3d(32px, -60px, 0) rotate(278deg);
+  background: #00eaff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(24) {
+  transform: translate3d(32px, -61px, 0) rotate(173deg);
+  background: #0095ff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(25) {
+  transform: translate3d(82px, -71px, 0) rotate(210deg);
+  background: #ff1500;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(26) {
+  transform: translate3d(13px, -74px, 0) rotate(198deg);
+  background: #00ff37;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(27) {
+  transform: translate3d(76px, -84px, 0) rotate(55deg);
+  background: #c8ff00;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(28) {
+  transform: translate3d(-53px, -68px, 0) rotate(71deg);
+  background: #6f00ff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(29) {
+  transform: translate3d(-47px, -85px, 0) rotate(125deg);
+  background: #ff002f;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(30) {
+  transform: translate3d(51px, -68px, 0) rotate(281deg);
+  background: #44ff00;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(31) {
+  transform: translate3d(-1px, -54px, 0) rotate(84deg);
+  background: #66ff00;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(32) {
+  transform: translate3d(-15px, -95px, 0) rotate(31deg);
+  background: #0004ff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(33) {
+  transform: translate3d(-53px, -83px, 0) rotate(346deg);
+  background: #6200ff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(34) {
+  transform: translate3d(11px, -88px, 0) rotate(288deg);
+  background: #ff002f;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(35) {
+  transform: translate3d(-14px, -83px, 0) rotate(102deg);
+  background: #0073ff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(36) {
+  transform: translate3d(29px, -66px, 0) rotate(199deg);
+  background: #7300ff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(37) {
+  transform: translate3d(-47px, -63px, 0) rotate(117deg);
+  background: #00ff2b;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(38) {
+  transform: translate3d(55px, -79px, 0) rotate(180deg);
+  background: #0022ff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(39) {
+  transform: translate3d(86px, -79px, 0) rotate(78deg);
+  background: #ff00d9;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(40) {
+  transform: translate3d(15px, -51px, 0) rotate(100deg);
+  background: #33ff00;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(41) {
+  transform: translate3d(76px, -85px, 0) rotate(26deg);
+  background: #ff007b;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(42) {
+  transform: translate3d(55px, -67px, 0) rotate(64deg);
+  background: #2b00ff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(43) {
+  transform: translate3d(-7px, -62px, 0) rotate(89deg);
+  background: #fff200;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(44) {
+  transform: translate3d(49px, -78px, 0) rotate(141deg);
+  background: #ff1e00;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(45) {
+  transform: translate3d(-54px, -83px, 0) rotate(135deg);
+  background: #00ffa2;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(46) {
+  transform: translate3d(74px, -77px, 0) rotate(197deg);
+  background: #ff5100;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(47) {
+  transform: translate3d(90px, -91px, 0) rotate(195deg);
+  background: #00ff5e;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(48) {
+  transform: translate3d(-56px, -83px, 0) rotate(337deg);
+  background: #00ff95;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(49) {
+  transform: translate3d(69px, -60px, 0) rotate(320deg);
+  background: #00fff2;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.purpleBox:hover i:nth-of-type(50) {
+  transform: translate3d(82px, -81px, 0) rotate(115deg);
+  background: #0073ff;
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
 }
