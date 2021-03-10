@@ -662,6 +662,8 @@ a {
 
 .eventDetailPage .subText {
   font-size: 25px;
+  max-width: 800px;
+  width: unset;
 }
 
 .eventsFlow {
@@ -1101,6 +1103,13 @@ a {
 }
 
 @media screen and (max-width: 980px) {
+  .subText {
+    width: 80% !important;
+    margin: auto !important;
+    text-align: center;
+    font-size: 1.3rem !important;
+    text-align: justify;
+  }
   .themeTopic {
     opacity: 1 !important;
   }
@@ -1271,11 +1280,6 @@ a {
   }
   .eventNameTitle {
     width: 80vw;
-  }
-  .subText {
-    width: 80%;
-    margin: auto !important;
-    text-align: center;
   }
   .tagline {
     text-align: center !important;

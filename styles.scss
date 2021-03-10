@@ -620,6 +620,8 @@ a {
 }
 .eventDetailPage .subText {
   font-size: 25px;
+  max-width: 800px;
+  width: unset;
 }
 .eventsFlow {
   font-family: Integral CF, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -998,6 +1000,19 @@ a {
 }
 
 @media screen and (max-width: 980px) {
+  .subText {
+    width: 80% !important;
+    margin: auto !important;
+    text-align: center;
+    font-size: 1.3rem !important;
+    text-align: justify;
+  }
+  // .eventDetailPage .subText {
+  //   font-size: 25px;
+  //   max-width: 800px;
+  //   // width: unset;
+  //   padding: auto 60px !important;
+  // }
   .themeTopic {
     opacity: 1 !important;
   }
@@ -1158,11 +1173,7 @@ a {
   .eventNameTitle {
     width: 80vw;
   }
-  .subText {
-    width: 80%;
-    margin: auto !important;
-    text-align: center;
-  }
+
   .tagline {
     text-align: center !important;
     font-size: 2rem;
