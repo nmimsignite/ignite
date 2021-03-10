@@ -395,35 +395,37 @@ function onMouseRotateOut() {
   });
 }
 
-function skewEffect() {
-  let proxy = { skew: 0 },
-    skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
-    clamp = gsap.utils.clamp(-30, 30); // don't let the skew go beyond 20 degrees.
+// function skewEffect() {
+//   let proxy = { skew: 0 },
+//     skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
+//     clamp = gsap.utils.clamp(-30, 30); // don't let the skew go beyond 20 degrees.
 
-  ScrollTrigger.create({
-    onUpdate: (self) => {
-      let skew = clamp(self.getVelocity() / -1200);
-      // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
-      if (Math.abs(skew) > Math.abs(proxy.skew)) {
-        proxy.skew = skew;
-        gsap.to(proxy, {
-          skew: 0,
-          duration: 0.8,
-          ease: "power3",
-          overwrite: true,
-          onUpdate: () => skewSetter(proxy.skew),
-        });
-      }
-    },
-  });
+//   ScrollTrigger.create({
+//     onUpdate: (self) => {
+//       let skew = clamp(self.getVelocity() / -1200);
+//       // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+//       if (Math.abs(skew) > Math.abs(proxy.skew)) {
+//         proxy.skew = skew;
+//         gsap.to(proxy, {
+//           skew: 0,
+//           duration: 0.8,
+//           ease: "power3",
+//           overwrite: true,
+//           onUpdate: () => skewSetter(proxy.skew),
+//         });
+//       }
+//     },
+//   });
 
-  // make the right edge "stick" to the scroll bar. force3D: true improves performance
-  gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
-}
+//   // make the right edge "stick" to the scroll bar. force3D: true improves performance
+//   gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
+// }
 
 document.addEventListener("DOMContentLoaded", animatePages());
 document.addEventListener("DOMContentLoaded", animateThings());
-document.addEventListener("DOMContentLoaded", skewEffect());
+// document.addEventListener("DOMContentLoaded", faqAccordion());
+
+// document.addEventListener("DOMContentLoaded", skewEffect());
 
 barba.init({
   views: [
@@ -496,8 +498,7 @@ gsap.config({ nullTargetWarn: false });
 
 // Accordion
 var acc = document.getElementsByClassName("accordion");
-var i;
-
+var i = 0;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
@@ -509,3 +510,19 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+// function faqAccordion() {
+//   console.log("AAUBADSBDUYISABDYUSASBDYUSAABDYU BARABABRBAB");
+//   var acc = document.getElementsByClassName("accordion");
+//   var i;
+//   for (i = 0; i < acc.length; i++) {
+//     acc[i].addEventListener("click", function () {
+//       this.classList.toggle("active");
+//       var panel = this.nextElementSibling;
+//       if (panel.style.maxHeight) {
+//         panel.style.maxHeight = null;
+//       } else {
+//         panel.style.maxHeight = panel.scrollHeight + "px";
+//       }
+//     });
+//   }
+// }
