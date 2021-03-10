@@ -1015,6 +1015,10 @@ a {
   color: #cb2d63;
 }
 
+.gameCardHead{
+  color: #CB3067;
+}
+
 .gameCardText {
   color: #001e6b;
 }
@@ -1025,6 +1029,22 @@ a {
 
 .techtalksText {
   color: #3f3820;
+}
+
+.creativeCardHead{
+  color: #8E0180;
+}
+
+.techtalesCardHead{
+  color: #6F6F6F;
+}
+
+.blockbusterCardHead{
+  color: #DA500A;
+}
+
+.memeServiceHeadCard{
+  color: #0083CC;
 }
 
 .cardText {
