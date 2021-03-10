@@ -1454,6 +1454,16 @@ a {
           animation: all 2s ease-in-out;
 }
 
+.leftRotate {
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.rightRotate {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
 .detailCard {
   width: 479px;
   height: 400px;
@@ -1462,7 +1472,7 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(#6289d8), to(#315dec));
   background: linear-gradient(180deg, #6289d8 0%, #315dec 100%);
   border-radius: 30px;
-  margin: 40px 30px 30px 30px;
+  margin: 40px 0px 30px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
