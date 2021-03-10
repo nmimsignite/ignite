@@ -1653,7 +1653,7 @@ a {
 
 @font-face {
   font-family: "Integral CF";
-  src: url("IntegralCF-Medium.woff2") format("woff2"), url("IntegralCF-Medium.woff") format("woff");
+  src: url("fonts/IntegralCF-Medium.woff2") format("woff2"), url("fonts/IntegralCF-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
