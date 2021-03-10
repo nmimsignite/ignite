@@ -568,6 +568,43 @@ a {
   margin: 30px 30px;
 }
 
+.prizes {
+  right: 0px;
+  position: absolute;
+  top: 120px;
+  /* or 25px */
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.purpleBox:hover {
+  width: 340px;
+  -webkit-transition: width 175ms ease, opacity 175ms ease;
+  transition: width 175ms ease, opacity 175ms ease;
+}
+
+.purpleBox {
+  -webkit-transition: width 175ms ease, opacity 175ms ease;
+  transition: width 175ms ease, opacity 175ms ease;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7875f4), to(#3c39d0));
+  background: linear-gradient(180deg, #7875f4 0%, #3c39d0 100%);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px 0 0 30px;
+  width: 292px;
+  padding: 20px 40px;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 100%;
+}
+
 .parnterTitle {
   font-family: "Integral CF", "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
@@ -1109,6 +1146,11 @@ a {
 }
 
 @media screen and (max-width: 980px) {
+  .purpleBox {
+    width: 30vw;
+    font-size: 1rem;
+    padding: 20px;
+  }
   .subText {
     width: 80% !important;
     margin: auto !important;
@@ -1451,6 +1493,26 @@ a {
     font-size: 1rem;
     width: auto !important;
     cursor: default !important;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    transition: -100px, 0;
+  }
+  100% {
+    -webkit-transition: 0px, 0;
+    transition: 0px, 0;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transition: -100px, 0;
+  }
+  100% {
+    -webkit-transition: 0px, 0;
+    transition: 0px, 0;
   }
 }
 
