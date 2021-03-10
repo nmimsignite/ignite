@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>*{
+    padding:0;
+    margin:0;
+    
+    }
+    html,body {
+  overflow: hidden;
+}
+    iframe{
+        z-index: 20;position: absolute; width: 50%; height: 50%;top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    }
+    @media screen and (max-width: 980px) {
+       iframe{
+        width: 100%;
+       } 
+            }        
+            canvas{
+        z-index: -1;
+    }
+    #back{
+        min-height: 100vh;
+    }</style>
+    <!-- <iframe  width="560" height="315" src="https://www.youtube.com/embed/live_stream?channel=UCNxk4RPg_wm0A_4v3dmji4w&autoplay=1" frameborder="0" allowfullscreen></iframe> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YwSjiNcgLX8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="back"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.globe.min.js"></script>
+<script>
+VANTA.GLOBE({
+  el: "#back",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 900.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
+</script>
+</body>
+</html>

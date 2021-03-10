@@ -16,6 +16,9 @@
     html,body {
   overflow: hidden;
 }
+body{
+    background: linear-gradient(144.69deg, #F6BF4A 1.56%, #EC622D 35.7%, #DC395E 64.16%, #C04D95 92.61%);
+}
     iframe{
         z-index: 20;position: absolute; width: 50%; height: 50%;top:50%;
     left:50%;
@@ -31,13 +34,54 @@
     }
     #back{
         min-height: 100vh;
-    }</style>
+    }
+    h1{
+        font-family: "Integral CF", "Circular Std", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 120px;
+line-height: 87%;
+/* or 104px */
+
+text-align: center;
+
+color: #FFFFFF;
+
+mix-blend-mode: overlay;
+margin: 0 30px;
+    }
+    .eventsFlowLive{
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+    .bEl {
+  animation: AlL 15s linear infinite;
+}
+@keyframes AlL {
+  0% {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+    </style>
+    <div class="eventsFlowLive"> <h1 class="bEl">NMIGNITELIVE</h1> <h1 class="bEl">NMIGNITELIVE</h1> <h1 class="bEl">NMIGNITELIVE</h1> <h1 class="bEl">NMIGNITELIVE</h1></div>
+ 
     <!-- <iframe  width="560" height="315" src="https://www.youtube.com/embed/live_stream?channel=UCNxk4RPg_wm0A_4v3dmji4w&autoplay=1" frameborder="0" allowfullscreen></iframe> -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/YwSjiNcgLX8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="540" height="315" src="https://www.youtube.com/embed/NvYPHyLyZ_o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <div name="iframe" style="width:100%; height:635px; border:2px solid grey; overflow:hidden">
+        <iframe src="https://www.youtube.com/channel/UCNxk4RPg_wm0A_4v3dmji4w" style="width:100%; height:700px; margin-top: -65px" scrolling="true">
+           If you can see this, your browser doesn't support iframes. Click <a href="https://www.youtube.com/channel/UCNxk4RPg_wm0A_4v3dmji4w">here to see my YouTube channel.</a>
+        </iframe>
+      </div> -->
     <div id="back"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.globe.min.js"></script>
-<script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.globe.min.js"></script> -->
+<!-- <script>
 VANTA.GLOBE({
   el: "#back",
   mouseControls: true,
@@ -48,6 +92,6 @@ VANTA.GLOBE({
   scale: 1.00,
   scaleMobile: 1.00
 })
-</script>
+</script> -->
 </body>
 </html>
