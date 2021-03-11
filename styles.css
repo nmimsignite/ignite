@@ -1171,8 +1171,8 @@ a {
 .display-nav {
   background: #fff;
   padding: 2rem;
-  width: 94vw;
-  height: 90vh;
+  width: 95vw;
+  height: 95vh;
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1200,7 +1200,7 @@ a {
 
 .event-header a,
 h3 {
-  margin: 0 10px 0 30px;
+  margin: 0 10px 0 10px;
 }
 
 .event-header {
