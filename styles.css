@@ -1168,11 +1168,10 @@ a {
 }
 
 .display-nav {
+  background: #fff;
+  padding: 2rem;
   width: 94vw;
   height: 90vh;
-  background: white;
-  -webkit-backdrop-filter: blur(500px);
-          backdrop-filter: blur(500px);
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;

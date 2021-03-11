@@ -1052,11 +1052,25 @@ a {
   right: 20px;
   top: 20px;
 }
+// .displayNavContainer {
+//   padding: 1rem;
+//   position: relative;
+//   background: linear-gradient(to right, red, purple);
+//   padding: 3px;
+// }
+// .display-nav:before {
+//   padding: 1rem;
+//   position: relative;
+//   background: linear-gradient(to right, red, purple);
+//   padding: 3px;
+// }
 .display-nav {
+  background: #fff;
+  padding: 2rem;
   width: 94vw;
   height: 90vh;
-  background: rgba(255, 255, 255, 1);
-  backdrop-filter: blur(500px);
+  // background: rgba(255, 255, 255, 1);
+  // backdrop-filter: blur(500px);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
