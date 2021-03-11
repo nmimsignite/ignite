@@ -1014,6 +1014,14 @@ a {
   color: #cb2d63;
 }
 
+.gameCardHead {
+  color: #bb3a5f;
+}
+
+.memeServiceHeadCard {
+  color: #3483c6;
+}
+
 .gameCardText {
   color: #303030;
 }
@@ -1028,6 +1036,10 @@ a {
 
 .techtalksText {
   color: #3f3820;
+}
+
+.blockbusterCardHead {
+  color: #ca572e;
 }
 
 .cardText {
