@@ -611,7 +611,6 @@ a {
   font-style: normal;
   font-weight: 300;
   font-size: 25px;
-  letter-spacing: 0.04em;
   line-height: 100%;
   text-align: center;
   /* identical to box height, or 25px */
@@ -1015,10 +1014,6 @@ a {
   color: #cb2d63;
 }
 
-.gameCardHead{
-  color: #CB3067;
-}
-
 .gameCardText {
   color: #001e6b;
 }
@@ -1029,22 +1024,6 @@ a {
 
 .techtalksText {
   color: #3f3820;
-}
-
-.creativeCardHead{
-  color: #8E0180;
-}
-
-.techtalesCardHead{
-  color: #6F6F6F;
-}
-
-.blockbusterCardHead{
-  color: #DA500A;
-}
-
-.memeServiceHeadCard{
-  color: #0083CC;
 }
 
 .cardText {
