@@ -1269,7 +1269,7 @@ h3 {
     text-align: center;
   }
   .eventDetailPage .subText {
-    text-align: justify;
+    text-align: left;
     font-size: 1.3rem !important;
   }
   .themeTopic {
@@ -1390,9 +1390,12 @@ h3 {
   }
   .closeModal {
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: unset;
-    left: 40px;
+    left: 30px;
+  }
+  .closeModal svg {
+    width: 80px;
   }
   .card {
     width: 90vw;
@@ -1403,7 +1406,7 @@ h3 {
     padding: 30px 40px;
   }
   .eventDetailPage {
-    padding-top: 160px !important;
+    padding-top: 120px !important;
   }
   .eventDetailPage .eventName {
     display: -webkit-box;
@@ -1442,7 +1445,7 @@ h3 {
     padding: 10px 0;
   }
   .eventNameTitle {
-    width: 80vw;
+    width: 65vw;
   }
   .tagline {
     text-align: center !important;
