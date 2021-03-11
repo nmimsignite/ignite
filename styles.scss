@@ -960,10 +960,10 @@ a {
 
   right: 80px;
 }
-.eventNameContainer {
-  position: relative;
-  margin-bottom: 20px;
-}
+// .eventNameContainer {
+//   position: relative;
+//   margin-bottom: 20px;
+// }
 .underlineEvent {
   position: absolute;
   display: none;
@@ -1303,6 +1303,12 @@ h3 {
     align-items: center;
     text-align: center;
   }
+  .eventName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   .cardHead,
   .cardText {
     margin: 20px 0;
@@ -1325,7 +1331,7 @@ h3 {
     padding: 10px 0;
   }
   .eventNameTitle {
-    width: 65vw;
+    width: 60vw;
   }
 
   .tagline {
