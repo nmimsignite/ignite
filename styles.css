@@ -1184,9 +1184,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   display: none;
   position: fixed;
   left: 0;
@@ -1200,7 +1200,7 @@ a {
 
 .event-header a,
 h3 {
-  margin: 0 10px 0 10px;
+  margin: 0 10px 0 30px;
 }
 
 .event-header {
@@ -1213,6 +1213,12 @@ h3 {
           flex-direction: column;
 }
 
+.event-header .flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .event-header img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1221,7 +1227,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 30px;
+  height: 30px;
   margin-right: 5px;
   margin-left: 5px;
 }

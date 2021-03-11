@@ -1061,7 +1061,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   display: none;
   position: fixed;
   left: 0;
@@ -1083,18 +1083,21 @@ a {
 }
 .event-header a,
 h3 {
-  margin: 0 10px 0 10px;
+  margin: 0 10px 0 30px;
 }
 .event-header {
   display: flex;
   flex-direction: column;
   // padding: 16px;
 }
+.event-header .flex {
+  align-items: center;
+}
 
 .event-header img {
   display: flex;
   flex-direction: row;
-  width: 30px;
+  height: 30px;
   margin-right: 5px;
   margin-left: 5px;
 }
