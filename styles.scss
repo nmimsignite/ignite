@@ -1055,7 +1055,8 @@ a {
 .display-nav {
   width: 94vw;
   height: 90vh;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 1);
+  backdrop-filter: blur(500px);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -1078,6 +1079,7 @@ a {
   // bottom: -10px;
   // left: 50%;
   // transform: translate(-50%, -50%);
+  overflow: scroll;
 }
 .event-header a,
 h3 {

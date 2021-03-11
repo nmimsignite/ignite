@@ -1170,7 +1170,9 @@ a {
 .display-nav {
   width: 94vw;
   height: 90vh;
-  background: #ffffff;
+  background: white;
+  -webkit-backdrop-filter: blur(500px);
+          backdrop-filter: blur(500px);
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1193,6 +1195,7 @@ a {
   margin-right: auto;
   margin-top: 20px;
   z-index: 99;
+  overflow: scroll;
 }
 
 .event-header a,
