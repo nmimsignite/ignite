@@ -85,13 +85,11 @@ function animatePages() {
     // );
     slide.fromTo(
       RevealTagline1,
-      0.3,
-      {
+      0.3, {
         y: "50%",
         // scale: 0,
         opacity: 0,
-      },
-      {
+      }, {
         y: "0%",
         // scale: 1,
         autoAlpha: 1,
@@ -100,13 +98,11 @@ function animatePages() {
     );
     slide.fromTo(
       RevealTagline2,
-      0.3,
-      {
+      0.3, {
         y: "50%",
         // scale: 0,
         opacity: 0,
-      },
-      {
+      }, {
         y: "0%",
         // scale: 1,
         autoAlpha: 1,
@@ -121,8 +117,7 @@ function animatePages() {
         y: "50%",
         opacity: 0,
         // scale: 0,
-      },
-      {
+      }, {
         y: "0%",
         autoAlpha: 1,
         ease: "power3.inOut",
@@ -138,8 +133,7 @@ function animatePages() {
         y: "50%",
         opacity: 0,
         // scale: 0,
-      },
-      {
+      }, {
         y: "0%",
         autoAlpha: 1,
         ease: "power3.inOut",
@@ -149,13 +143,11 @@ function animatePages() {
     );
 
     slide.fromTo(
-      ".mike",
-      {
+      ".mike", {
         x: "200%",
         scale: 0,
         opacity: 0,
-      },
-      {
+      }, {
         x: "0%",
         opacity: 1,
         scale: 1,
@@ -195,10 +187,10 @@ function animatePages() {
     //Create Scene
 
     slideScene = new ScrollMagic.Scene({
-      triggerElement: section,
-      triggerHook: 0.2,
-      reverse: false,
-    })
+        triggerElement: section,
+        triggerHook: 0.2,
+        reverse: false,
+      })
 
       .setTween(slide)
       .addTo(controller);
@@ -207,6 +199,7 @@ function animatePages() {
 
   //Parallax
 }
+
 function animateThings() {
   // const pairHook = document.querySelector(".pair");
   const pairers = document.querySelectorAll(".pair");
@@ -231,14 +224,12 @@ function animateThings() {
     //   },
     // });
     Ptl.fromTo(
-      illustrationReveal,
-      {
+      illustrationReveal, {
         // scale: 0,
         // x: -400,
         y: 300,
         opacity: 0,
-      },
-      {
+      }, {
         scale: 1,
         x: 0,
         y: 0,
@@ -248,14 +239,12 @@ function animateThings() {
     );
 
     Ptl.fromTo(
-      child,
-      {
+      child, {
         // scale: 0,
         // x: 400,
         y: 300,
         opacity: 0.3,
-      },
-      {
+      }, {
         scale: 1,
         x: 0,
         y: -40,
@@ -322,13 +311,13 @@ function animateThings() {
     // }
     // );
     var scene = new ScrollMagic.Scene({
-      triggerElement: pairHook,
-      triggerHook: 0.7,
-      duration: "100%",
-      // pin: true,
+        triggerElement: pairHook,
+        triggerHook: 0.7,
+        duration: "100%",
+        // pin: true,
 
-      // end: "+=4000",
-    })
+        // end: "+=4000",
+      })
       .setTween(Ptl)
       // .addIndicators()
       .addTo(controller);
@@ -381,6 +370,7 @@ function onMouseHover() {
     // attr: { width: 100, height: 100 },
   });
 }
+
 function onMouseHoverOut() {
   TweenMax.to($bigBall, 0.3, {
     // rotation: 10,
@@ -395,6 +385,7 @@ function onMouseRotate() {
     rotation: 720,
   });
 }
+
 function onMouseRotateOut() {
   TweenMax.to($bigBall, 0.3, {
     rotation: 0,
@@ -429,11 +420,6 @@ function onMouseRotateOut() {
 //   gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
 // }
 
-document.addEventListener("DOMContentLoaded", animatePages());
-document.addEventListener("DOMContentLoaded", animateThings());
-// document.addEventListener("DOMContentLoaded", faqAccordion());
-
-// document.addEventListener("DOMContentLoaded", skewEffect());
 function faqAccordion() {
   console.log("AAUBADSBDUYISABDYUSASBDYUSAABDYU BARABABRBAB");
   var acc = document.getElementsByClassName("accordion");
@@ -451,9 +437,14 @@ function faqAccordion() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", animatePages());
+document.addEventListener("DOMContentLoaded", animateThings());
+// document.addEventListener("DOMContentLoaded", faqAccordion());
+
+// document.addEventListener("DOMContentLoaded", skewEffect());
+
 barba.init({
-  views: [
-    {
+  views: [{
       namespace: "home",
       beforeEnter() {
         animatePages();
@@ -474,67 +465,95 @@ barba.init({
       namespace: "typeform",
     },
   ],
-  transitions: [
-    {
-      name: "opacity-transition",
-      leave({ current, next }) {
-        let done = this.async();
-        const t1 = gsap.timeline({ defaults: { ease: "power3.inOut" } });
-        t1.fromTo(
-          current.container,
-          1,
-          { opacity: 1 },
-          { opacity: 0, onComplete: done }
-        );
-        t1.fromTo(
-          ".swipe",
-          0.6,
-          { x: "-100%" },
-          { x: "0%", onComplete: done },
-          "-=0.5"
-        );
-        // return gsap.to(current.container, {
-        //   // x: -200,
-        //   opacity: 0,
-        // });
-      },
-      enter({ current, next }) {
-        window.scrollTo(0, 0);
-
-        let done = this.async();
-        const t1 = gsap.timeline({ defaults: { ease: "power3.inOut" } });
-        t1.fromTo(
-          ".swipe",
-          0.6,
-          { x: "0%" },
-          { x: "100%", stagger: 0.2, onComplete: done }
-          // "-=0.5"
-        );
-        t1.fromTo(next.container, 0.2, { opacity: 0 }, { opacity: 1 });
-
-        // return gsap.from(next.container, {
-        //   //   scale: 0,
-        //   // x: 200,
-        //   opacity: 0,
-        // });
-      },
+  transitions: [{
+    name: "opacity-transition",
+    leave({
+      current,
+      next
+    }) {
+      let done = this.async();
+      const t1 = gsap.timeline({
+        defaults: {
+          ease: "power3.inOut"
+        }
+      });
+      t1.fromTo(
+        current.container,
+        1, {
+          opacity: 1
+        }, {
+          opacity: 0,
+          onComplete: done
+        }
+      );
+      t1.fromTo(
+        ".swipe",
+        0.6, {
+          x: "-100%"
+        }, {
+          x: "0%",
+          onComplete: done
+        },
+        "-=0.5"
+      );
+      // return gsap.to(current.container, {
+      //   // x: -200,
+      //   opacity: 0,
+      // });
     },
-  ],
+    enter({
+      current,
+      next
+    }) {
+      window.scrollTo(0, 0);
+
+      let done = this.async();
+      const t1 = gsap.timeline({
+        defaults: {
+          ease: "power3.inOut"
+        }
+      });
+      t1.fromTo(
+        ".swipe",
+        0.6, {
+          x: "0%"
+        }, {
+          x: "100%",
+          stagger: 0.2,
+          onComplete: done
+        }
+        // "-=0.5"
+      );
+      t1.fromTo(next.container, 0.2, {
+        opacity: 0
+      }, {
+        opacity: 1
+      });
+
+      // return gsap.from(next.container, {
+      //   //   scale: 0,
+      //   // x: 200,
+      //   opacity: 0,
+      // });
+    },
+  }, ],
 });
 
-gsap.config({ nullTargetWarn: false });
+gsap.config({
+  nullTargetWarn: false
+});
 
 // Accordion
-var acc = document.getElementsByClassName("accordion");
-var i = 0;
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
+// var acc = document.getElementsByClassName("accordion");
+// var i = 0;
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function () {
+//     this.classList.toggle("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.maxHeight) {
+//       panel.style.maxHeight = null;
+//     } else {
+//       panel.style.maxHeight = panel.scrollHeight + "px";
+//     }
+//   });
+// }
