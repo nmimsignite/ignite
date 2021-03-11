@@ -1053,7 +1053,7 @@ a {
   top: 20px;
 }
 .display-nav {
-  width: 90vw;
+  width: 94vw;
   height: 90vh;
   background: #ffffff;
   border-radius: 15px;
@@ -1079,7 +1079,10 @@ a {
   // left: 50%;
   // transform: translate(-50%, -50%);
 }
-
+.event-header a,
+h3 {
+  margin: 0 10px 0 10px;
+}
 .event-header {
   display: flex;
   flex-direction: column;
@@ -1466,7 +1469,7 @@ a {
       sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 50px;
     letter-spacing: -0.015em;
     color: linear-gradient(180deg, #161e26 0%, #000509 100%);
@@ -1477,7 +1480,7 @@ a {
       sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 0.8rem;
     line-height: 13px;
     letter-spacing: -0.015em;
 
