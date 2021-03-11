@@ -1047,6 +1047,75 @@ a {
 
   transform: translate(0, -10px);
 }
+.display-nav svg {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.display-nav {
+  width: 90vw;
+  height: 90vh;
+  background: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  // top: 0;
+  // bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  // margin-top: auto;
+  // height: 90vh;
+  // height: 80%;
+  // padding: var(--siteMenuMargin);
+  z-index: 99;
+  // bottom: -10px;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+}
+
+.event-header {
+  display: flex;
+  flex-direction: column;
+  // padding: 16px;
+}
+
+.event-header img {
+  display: flex;
+  flex-direction: row;
+  width: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.event-header h2 {
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: -0.015em;
+  color: linear-gradient(180deg, #161e26 0%, #000509 100%);
+  margin-left: 5px;
+}
+.event-header h3 {
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 13px;
+  letter-spacing: -0.015em;
+
+  color: #b1b7c0;
+}
 
 @media screen and (max-width: 980px) {
   .purpleBox {
@@ -1378,6 +1447,41 @@ a {
     font-size: 1rem;
     width: auto !important;
     cursor: default !important;
+  }
+  // .display-nav {
+  //   display: block;
+  // }
+  .display-nav .row {
+    flex-direction: row !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .display-nav {
+    width: 100vw;
+    height: 100vh;
+  }
+  .event-header h2 {
+    font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 0.8rem;
+    line-height: 50px;
+    letter-spacing: -0.015em;
+    color: linear-gradient(180deg, #161e26 0%, #000509 100%);
+  }
+  .event-header h3 {
+    font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 13px;
+    letter-spacing: -0.015em;
+
+    color: #b1b7c0;
   }
 }
 

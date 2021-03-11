@@ -11,6 +11,14 @@
 //     x = 0;
 //   }
 // }
+function toggleNav() {
+  var x = document.getElementById("display-nav");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
 
 function animatePages() {
   console.log("Works.");
