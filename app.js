@@ -434,6 +434,22 @@ document.addEventListener("DOMContentLoaded", animateThings());
 // document.addEventListener("DOMContentLoaded", faqAccordion());
 
 // document.addEventListener("DOMContentLoaded", skewEffect());
+function faqAccordion() {
+  console.log("AAUBADSBDUYISABDYUSASBDYUSAABDYU BARABABRBAB");
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+}
 
 barba.init({
   views: [
@@ -449,6 +465,9 @@ barba.init({
       namespace: "ideathon",
       beforeEnter() {
         animatePages();
+      },
+      afterEnter() {
+        faqAccordion();
       },
     },
     {
@@ -502,6 +521,7 @@ barba.init({
     },
   ],
 });
+
 gsap.config({ nullTargetWarn: false });
 
 // Accordion
@@ -518,19 +538,3 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-// function faqAccordion() {
-//   console.log("AAUBADSBDUYISABDYUSASBDYUSAABDYU BARABABRBAB");
-//   var acc = document.getElementsByClassName("accordion");
-//   var i;
-//   for (i = 0; i < acc.length; i++) {
-//     acc[i].addEventListener("click", function () {
-//       this.classList.toggle("active");
-//       var panel = this.nextElementSibling;
-//       if (panel.style.maxHeight) {
-//         panel.style.maxHeight = null;
-//       } else {
-//         panel.style.maxHeight = panel.scrollHeight + "px";
-//       }
-//     });
-//   }
-// }

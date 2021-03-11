@@ -56,15 +56,84 @@
 
     
 </div>
-<div class="mobileNavbar">
+<div class="swipe swipe1"></div>
+<div class="swipe swipe2"></div>
+<div class="swipe swipe3"></div>
+
+<div class="mobileNavbar" onclick="toggleNav()">
   <svg width="16" height="10" viewBox="0 0 16 10">
-<title>Open mobile navigation</title>
-<g fill="var(--knockoutColor)" fill-rule="evenodd">
-  <rect y="8" width="16" height="2" rx="1"></rect>
-  <rect y="4" width="16" height="2" rx="1"></rect>
-  <rect width="16" height="2" rx="1"></rect>
-</g>
-</svg>
+    <title>Open mobile navigation</title>
+      <g fill="var(--knockoutColor)" fill-rule="evenodd">
+        <rect y="8" width="16" height="2" rx="1"></rect>
+        <rect y="4" width="16" height="2" rx="1"></rect>
+        <rect width="16" height="2" rx="1"></rect>
+       </g>
+  </svg>
+</div>
+<div class="displayNavContainer">
+<div class="display-nav" id="display-nav" >
+  <div onclick="toggleNav()"> <svg width="40" height="40" viewBox="0 0 40 40" >
+    <title>Close mobile navigation</title>
+    <path d="M25.6 14.3a1 1 0 0 1 0 1.4l-4.24 4.25 4.25 4.24a1 1 0 1 1-1.42 1.42l-4.24-4.25-4.24 4.25a1 1 0 0 1-1.42-1.42l4.25-4.24-4.25-4.24a1 1 0 0 1 1.42-1.42l4.24 4.25 4.24-4.25a1 1 0 0 1 1.42 0z" fill="#8898AA" fill-rule="evenodd"></path>
+  </svg>
+</div>
+ 
+  <div class="event-header">
+    <a class="flex row" onclick="toggleNav()" href="./sparkathon.html"> 
+    <img src="./assets/navbar/sparkathon-logo.svg">
+    <h2>Spârkâthon</h2>
+    </a>
+    <h3>A beginner friendly 4-day hackathon.</h3>
+  
+  </div>
+  <div class="event-header">
+    <a class="flex row" onclick="toggleNav()" href="./gaming.html"> 
+      <img src="./assets/navbar/gaming-logo.svg">
+      <h2>Gâmïng</h2>
+    </a>
+    <h3>Game with Valorant like a boss.</h3>
+  </div>
+  <div class="event-header">
+    <a class="flex row" onclick="toggleNav()" href="./techtalks.html"> 
+      <img src="./assets/navbar/techtalks-logo.svg">
+      <h2>Têch Talkš</h2>
+    </a>
+    <h3>Incredible speakers with incredible insights.</h3>
+
+  </div>
+  <div class="event-header">
+    <a class="flex row" onclick="toggleNav()" href="./MaaS.html"> 
+      <img src="./assets/navbar/maas-logo.svg">
+      <h2>Mêmê-as-a-Sêrvicê</h2>
+    </a>
+    <h3>Market your ideas like a meme lord.</h3>
+
+  </div>
+  <div class="event-header">
+    <a class="flex row" onclick="toggleNav()" href="./creative-competition.html"> 
+      <img src="./assets/navbar/gocreative-logo.svg">
+      <h2>Gø Crêative</h2>
+    </a>
+    <h3>Create something beautiful based on a theme.</h3>
+
+  </div>
+  <div class="event-header">
+    <a class="flex row" onclick="toggleNav()" href="./tech-tales.html"> 
+      <img src="./assets/navbar/techtales-logo.svg">
+      <h2>Têch Tåles</h2>
+    </a>
+    <h3>Write sci-fi stories.</h3>
+
+  </div>
+  <div class="event-header">
+    <a class="flex row" onclick="toggleNav()" href="./blockbuster-crypto.html"> 
+      <img src="./assets/navbar/blockbustercrypto-logo.svg">
+      <h2>Bløckbustêr Cryptø</h2>
+    </a>
+    <h3>Learn ciphers along with help from Bollywood.</h3>
+
+  </div>
+</div>
 </div>
 <main data-barba="container"  data-barba-namespace="ideathon">
     <div class="techTalks flex center eventStart eventDetailPage skewElem">
