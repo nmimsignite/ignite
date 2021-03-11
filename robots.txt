@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://nmignite.tech/sitemap.xml
