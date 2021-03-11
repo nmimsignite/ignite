@@ -1015,7 +1015,11 @@ a {
 }
 
 .gameCardText {
-  color: #001e6b;
+  color: #303030;
+}
+
+.creativeCardHead {
+  color: #821d7c;
 }
 
 .techtalksCardHead {
