@@ -623,6 +623,7 @@ a {
 .page2 {
   color: #05d5b8;
   background: #554cc2;
+  background: #3E3BD0;
   padding: 120px 0 0px 0 !important;
   position: relative;
 }
@@ -1262,6 +1263,7 @@ h3 {
     width: 80% !important;
     margin: auto !important;
     text-align: center;
+    font-size: 1.3em;
   }
   .eventDetailPage .subText {
     text-align: left;
@@ -1601,6 +1603,7 @@ h3 {
     padding-left: 0;
     text-align: center;
     position: relative;
+    min-height: 90vh !important;
   }
   .hackathonLogo {
     width: 40px;
