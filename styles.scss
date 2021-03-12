@@ -1096,7 +1096,7 @@ a {
   // bottom: -10px;
   // left: 50%;
   // transform: translate(-50%, -50%);
-  overflow: scroll;
+  overflow: hidden ;
   box-shadow: 0 50px 100px -20px rgba(50,50,93,0.25),0 30px 60px -30px rgba(0,0,0,0.3);
 }
 .event-header a,
