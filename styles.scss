@@ -1070,8 +1070,8 @@ a {
 .display-nav {
   background: #fff;
   padding: 2rem;
-  width: 95vw;
-  height: 95vh;
+  width: 400px;
+  height: 600px;
   // background: rgba(255, 255, 255, 1);
   // backdrop-filter: blur(500px);
   border-radius: 15px;
@@ -1087,7 +1087,7 @@ a {
   // bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   // margin-top: auto;
   // height: 90vh;
   // height: 80%;
@@ -1097,6 +1097,7 @@ a {
   // left: 50%;
   // transform: translate(-50%, -50%);
   overflow: scroll;
+  box-shadow: 0 50px 100px -20px rgba(50,50,93,0.25),0 30px 60px -30px rgba(0,0,0,0.3);
 }
 .event-header a,
 h3 {
@@ -1143,6 +1144,37 @@ h3 {
 }
 
 @media screen and (max-width: 980px) {
+  .display-nav {
+  background: #fff;
+  padding: 2rem;
+  width: 95vw;
+  height: 95vh;
+  // background: rgba(255, 255, 255, 1);
+  // backdrop-filter: blur(500px);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  // top: 0;
+  // bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  // margin-top: auto;
+  // height: 90vh;
+  // height: 80%;
+  // padding: var(--siteMenuMargin);
+  z-index: 99;
+  // bottom: -10px;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  overflow: scroll;
+}
   .purpleBox {
     width: 30vw;
     font-size: 0.8rem;
