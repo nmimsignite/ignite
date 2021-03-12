@@ -1152,6 +1152,13 @@ a {
   transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
 }
 
+.theme img {
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
 .theme:hover img {
   -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
   transition: opacity 175ms ease, -webkit-transform 175ms ease;

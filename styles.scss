@@ -1045,6 +1045,10 @@ a {
   opacity: 1;
   transition: transform 175ms ease, opacity 175ms ease;
 }
+.theme img{
+    transition: transform 175ms ease, opacity 175ms ease;
+
+}
 .theme:hover img {
   transition: transform 175ms ease, opacity 175ms ease;
 
