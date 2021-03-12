@@ -1704,31 +1704,48 @@ h3 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.active,
-.accordion:hover {
-  transition: all 175ms ease, -webkit-all 175ms ease;
-  // background-color: #ccc;
-  background: linear-gradient(
-    343.19deg,
-    #f6bf4a -4.41%,
-    #ec622d 20.24%,
-    #dc395e 62.41%,
-    #c04d95 92.78%
-  );
+// .active,
+// .accordion:hover {
+//   transition: all 175ms ease, -webkit-all 175ms ease;
+//   // background-color: #ccc;
+//   background: linear-gradient(
+//     343.19deg,
+//     #f6bf4a -4.41%,
+//     #ec622d 20.24%,
+//     #dc395e 62.41%,
+//     #c04d95 92.78%
+//   );
+
+// }
   // .active {
   //   margin: 0px 0;
 
   //   // border-radius: 30px 30px 0 0;
   // }
-}
-// .active .greenAccordion,.greenAccordion:hover{
-//   background: #439A93;
-// }
-// .active .yellowAccordion,.yellowAccordion:hover{
-//     background: linear-gradient(139.41deg, #D38D34 5.11%, #d67300 91.8%);
-//   background: #D38D34;
-// }
-
+ .greenAccordion .active ,.greenAccordion .accordion:hover{
+   background: #439A93;
+ }
+  .blueAccordion .active ,.blueAccordion .accordion:hover{
+   background: #3483C6;
+ }
+ .creativeAccordion .active ,.creativeAccordion .accordion:hover{
+   background: #821D7C;
+ }
+   .blockbusterAccordion .active ,.blockbusterAccordion .accordion:hover{
+   background: #BF4E26;
+ }
+.yellowAccordion .active,.yellowAccordion .accordion:hover{
+     background: linear-gradient(139.41deg, #D38D34 5.11%, #d67300 91.8%);
+   background: #D38D34;
+ }
+ .greyAccordion .active,.greyAccordion .accordion:hover
+ {
+   background: #6F6F6F;
+ }
+.redAccordion .active,.redAccordion .accordion:hover
+ {
+   background: #BB3557;
+ }
 .accordion:after {
   content: "\002B";
   font-size: 30px;
