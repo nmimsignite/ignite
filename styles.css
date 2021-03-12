@@ -1214,6 +1214,17 @@ h3 {
           flex-direction: column;
 }
 
+.event-header h2::after {
+  transition: all 175ms ease, -webkit-all 175ms ease;
+}
+
+.event-header h2:hover::after {
+  content: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.9585 9.5H15.0418' stroke='%238FADCF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.5 3.95834L15.0417 9.50001L9.5 15.0417' stroke='%238FADCF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+}
+
 .event-header .flex {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1230,7 +1241,7 @@ h3 {
           flex-direction: row;
   height: 30px;
   margin-right: 5px;
-  margin-left: 5px;
+  margin-left: 0px;
 }
 
 .event-header h2 {
