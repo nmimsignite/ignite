@@ -826,10 +826,10 @@ a {
 }
 
 .navbar {
-  font-family: Integral CF, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Integral CF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.6em;
+  font-size: 1.5em;
   /* or 26px */
   color: #ffffff;
   display: -webkit-box;
@@ -859,6 +859,8 @@ a {
 
 .navbar .item {
   margin: 12px 20px;
+  mix-blend-mode: overlay;
+  opacity: 0.9;
 }
 
 .button,
