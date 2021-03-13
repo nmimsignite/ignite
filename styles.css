@@ -1223,26 +1223,31 @@ a {
   background: rgba(255, 255, 255, 0.1);
   mix-blend-mode: normal;
   z-index: 9;
-  -webkit-backdrop-filter: saturate(100%) blur(90px);
-          backdrop-filter: saturate(100%) blur(90px);
+  -webkit-backdrop-filter: saturate(120%) blur(90px);
+          backdrop-filter: saturate(120%) blur(90px);
   color: #ffffff;
-}
-
-.event-header a,
-h3 {
-  margin: 0 10px 0 10px;
 }
 
 .event-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 2px;
-  margin: 2px;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding: 4px 0;
+  margin-left: 10px;
+}
+
+.event-header a {
+  margin: 0 10px 0 10px;
+  width: 100%;
+}
+
+.event-header div {
+  padding-left: 20px;
 }
 
 .event-header h2::after {
@@ -1250,7 +1255,7 @@ h3 {
 }
 
 .event-header h2:hover::after {
-  content: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.9585 9.5H15.0418' stroke='%238FADCF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.5 3.95834L15.0417 9.50001L9.5 15.0417' stroke='%238FADCF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  content: url("./assets/nav/arrow-right.svg");
   position: absolute;
   left: 0;
   margin-left: 20px;
@@ -1271,7 +1276,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 30px;
+  height: 50px;
   margin-right: 5px;
   margin-left: 0px;
 }
@@ -1284,7 +1289,6 @@ h3 {
   line-height: 50px;
   letter-spacing: -0.015em;
   color: linear-gradient(180deg, #161e26 0%, #000509 100%);
-  margin-left: 5px;
 }
 
 .event-header h3 {
@@ -1337,7 +1341,7 @@ h3 {
     margin-right: auto;
     margin-top: 20px;
     z-index: 99;
-    overflow: scroll;
+    overflow-y: scroll;
   }
   .purpleBox {
     width: 30vw;
