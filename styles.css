@@ -1227,7 +1227,6 @@ a {
   -webkit-backdrop-filter: saturate(100%) blur(90px);
           backdrop-filter: saturate(100%) blur(90px);
   color: #ffffff;
-  display: block;
 }
 
 .event-header a,
