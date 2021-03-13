@@ -1228,6 +1228,10 @@ a {
   color: #ffffff;
 }
 
+.display-nav svg path {
+  fill: #ffffff !important;
+}
+
 .event-header {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1131,6 +1131,10 @@ a {
   //  display: block;
 }
 
+.display-nav svg path{
+  fill: #ffffff !important;
+}
+
 .event-header {
   display: flex;
   flex-direction: row;
