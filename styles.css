@@ -1192,7 +1192,7 @@ a {
 }
 
 .display-nav {
-  padding: 2rem;
+  padding: 1.5rem;
   width: 400px;
   height: 600px;
   border-radius: 15px;
@@ -1220,7 +1220,7 @@ a {
   overflow: hidden;
   -webkit-box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3);
           box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   mix-blend-mode: normal;
   z-index: 9;
   -webkit-backdrop-filter: saturate(120%) blur(90px);
@@ -1258,7 +1258,7 @@ a {
   position: absolute;
   left: 0;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .event-header .flex {
@@ -1275,7 +1275,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 50px;
+  height: 40px;
+  width: 40px;
   margin-right: 5px;
   margin-left: 0px;
 }
@@ -1285,7 +1286,7 @@ a {
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
-  line-height: 50px;
+  line-height: 40px;
   letter-spacing: -0.015em;
   color: linear-gradient(180deg, #161e26 0%, #000509 100%);
 }
