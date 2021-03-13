@@ -1727,6 +1727,19 @@ a {
 }
 
 @media screen and (max-width: 320px) {
+  .event-header img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 30px;
+    width: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
   .display-nav {
     width: 100vw;
     height: 100vh;
@@ -1736,7 +1749,7 @@ a {
     font-style: normal;
     font-weight: 900;
     font-size: 1rem;
-    line-height: 50px;
+    line-height: 40px;
     letter-spacing: -0.015em;
     color: linear-gradient(180deg, #161e26 0%, #000509 100%);
   }
@@ -1747,7 +1760,7 @@ a {
     font-size: 0.8rem;
     line-height: 13px;
     letter-spacing: -0.015em;
-    color: #b1b7c0;
+    color: #fff;
   }
 }
 
