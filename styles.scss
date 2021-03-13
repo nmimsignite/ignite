@@ -725,8 +725,9 @@ a {
 .tagline {
   // right: 31.18%;
   margin-top: 60px;
-  font-family: "Epilogue","Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Epilogue", "Circular Std", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 60px;
@@ -927,7 +928,7 @@ a {
   color: #3483c6;
 }
 .techtalesCardHead {
-  color: #6F6F6F;
+  color: #6f6f6f;
 }
 .gameCardText {
   color: #303030;
@@ -1050,6 +1051,109 @@ a {
 
   transform: translate(0, -10px);
 }
+.circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+  position: relative;
+  left: 584px;
+  top: 99px;
+
+  background: linear-gradient(
+    144.69deg,
+    #f6bf4a 1.56%,
+    #ec622d 35.7%,
+    #dc395e 64.16%,
+    #c04d95 92.61%
+  );
+}
+
+.circle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+}
+.circle-end {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+  position: relative;
+  left: 585px;
+  bottom: 0px;
+
+  background: linear-gradient(
+    144.69deg,
+    #f6bf4a 1.56%,
+    #ec622d 35.7%,
+    #dc395e 64.16%,
+    #c04d95 92.61%
+  );
+}
+.circle-end:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+}
+.vl {
+  border-left: 6px solid rgba(246, 191, 74, 0.32);
+  height: 530px;
+  width: 0px;
+  position: relative;
+  left: 600px;
+  top: 100px;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.timeline-holder {
+  width: 200px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: linear-gradient(
+    144.69deg,
+    #f6bf4a 1.56%,
+    #ec622d 35.7%,
+    #dc395e 64.16%,
+    #c04d95 92.61%
+  );
+  font-size: 24px;
+  filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 100px;
+  top: 20px;
+}
+.date-holder {
+  text-align: center;
+}
+
+.hack-info {
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 140px;
+  float: right;
+  margin-right: 400px;
+}
 .display-nav svg {
   position: absolute;
   right: 20px;
@@ -1096,8 +1200,9 @@ a {
   // bottom: -10px;
   // left: 50%;
   // transform: translate(-50%, -50%);
-  overflow: hidden ;
-  box-shadow: 0 50px 100px -20px rgba(50,50,93,0.25),0 30px 60px -30px rgba(0,0,0,0.3);
+  overflow: hidden;
+  box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25),
+    0 30px 60px -30px rgba(0, 0, 0, 0.3);
 }
 .event-header a,
 h3 {
@@ -1109,17 +1214,15 @@ h3 {
   flex-direction: column;
   // padding: 16px;
 }
-.event-header h2::after{
-    transition: all 175ms ease, -webkit-all 175ms ease;
-
+.event-header h2::after {
+  transition: all 175ms ease, -webkit-all 175ms ease;
 }
-.event-header h2:hover::after{
+.event-header h2:hover::after {
   content: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.9585 9.5H15.0418' stroke='%238FADCF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.5 3.95834L15.0417 9.50001L9.5 15.0417' stroke='%238FADCF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   position: absolute;
   left: 0;
   margin-left: 20px;
 
-  
   // display: inline-block;
 }
 .event-header .flex {
@@ -1159,36 +1262,36 @@ h3 {
 
 @media screen and (max-width: 980px) {
   .display-nav {
-  background: #fff;
-  padding: 2rem;
-  width: 95vw;
-  height: 95vh;
-  // background: rgba(255, 255, 255, 1);
-  // backdrop-filter: blur(500px);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  display: none;
-  position: fixed;
-  left: 0;
-  right: 0;
-  // top: 0;
-  // bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  // margin-top: auto;
-  // height: 90vh;
-  // height: 80%;
-  // padding: var(--siteMenuMargin);
-  z-index: 99;
-  // bottom: -10px;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  overflow: scroll;
-}
+    background: #fff;
+    padding: 2rem;
+    width: 95vw;
+    height: 95vh;
+    // background: rgba(255, 255, 255, 1);
+    // backdrop-filter: blur(500px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    // top: 0;
+    // bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    // margin-top: auto;
+    // height: 90vh;
+    // height: 80%;
+    // padding: var(--siteMenuMargin);
+    z-index: 99;
+    // bottom: -10px;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    overflow: scroll;
+  }
   .purpleBox {
     width: 30vw;
     font-size: 0.8rem;
@@ -1337,7 +1440,7 @@ h3 {
     right: unset;
     left: 30px;
   }
-  .closeModal svg{
+  .closeModal svg {
     width: 80px;
   }
   .card {
