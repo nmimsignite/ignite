@@ -1170,7 +1170,7 @@ a {
   flex-direction: row;
   height: 40px;
   width: 40px;
-  margin-right: 5px;
+  margin-right: 0px;
   margin-left: 0px;
 }
 
@@ -1193,6 +1193,7 @@ a {
   line-height: 13px;
   letter-spacing: -0.015em;
   color: #ffffff;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 980px) {
