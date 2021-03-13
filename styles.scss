@@ -1111,7 +1111,7 @@ a {
   // bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 50px;
   // margin-top: auto;
   // height: 90vh;
   // height: 80%;
@@ -1122,6 +1122,13 @@ a {
   // transform: translate(-50%, -50%);
   overflow: hidden ;
   box-shadow: 0 50px 100px -20px rgba(50,50,93,0.25),0 30px 60px -30px rgba(0,0,0,0.3);
+   // mix-blend-mode: overlay;
+   background: rgba(255, 255, 255, 0.1);
+   mix-blend-mode: normal;
+   z-index: 9;
+   backdrop-filter: saturate(100%) blur(90px);
+   color: #ffffff;
+   display: block;
 }
 .event-header a,
 h3 {
@@ -1131,6 +1138,8 @@ h3 {
 .event-header {
   display: flex;
   flex-direction: column;
+  padding: 2px;
+  margin: 2px;
   // padding: 16px;
 }
 .event-header h2::after{
@@ -1142,7 +1151,7 @@ h3 {
   position: absolute;
   left: 0;
   margin-left: 20px;
-
+  margin-top: 20px;
   
   // display: inline-block;
 }
@@ -1178,7 +1187,7 @@ h3 {
   line-height: 13px;
   letter-spacing: -0.015em;
 
-  color: #b1b7c0;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 980px) {
@@ -1727,7 +1736,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 100px;
+  min-height: 80px;
   font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
