@@ -1192,7 +1192,6 @@ a {
 }
 
 .display-nav {
-  background: #fff;
   padding: 2rem;
   width: 400px;
   height: 600px;
@@ -1313,7 +1312,6 @@ h3 {
     height: 4px !important;
   }
   .display-nav {
-    background: #fff;
     padding: 2rem;
     width: 95vw;
     height: 95vh;
