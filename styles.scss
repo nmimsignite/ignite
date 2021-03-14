@@ -1302,6 +1302,12 @@ a {
   opacity: 0.9;
 }
 
+@media screen and (max-width: 1350px){
+  .timeline{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 980px) {
   .horzLine{
     display: block;
