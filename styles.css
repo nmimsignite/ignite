@@ -620,6 +620,21 @@ a {
   margin-top: 40px;
 }
 
+.dividingLine {
+  margin: 0 20px;
+}
+
+.horzLine {
+  display: none;
+}
+
+.presented {
+  font-family: "Integral CF", "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #ffffff;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
 .page2 {
   color: #05d5b8;
   background: #554cc2;
@@ -787,7 +802,7 @@ a {
   font-family: "Epilogue", "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 60px;
+  font-size: 55px;
   line-height: 87%;
   /* or 70px */
   mix-blend-mode: soft-light;
@@ -811,10 +826,10 @@ a {
 }
 
 .navbar {
-  font-family: Integral CF, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Integral CF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.6em;
+  font-size: 1.5em;
   /* or 26px */
   color: #ffffff;
   display: -webkit-box;
@@ -844,6 +859,8 @@ a {
 
 .navbar .item {
   margin: 12px 20px;
+  mix-blend-mode: overlay;
+  opacity: 0.9;
 }
 
 .button,
@@ -853,7 +870,7 @@ a {
           box-sizing: border-box;
   border-radius: 15px;
   font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1087,10 +1104,10 @@ a {
   top: -50px;
   left: 0;
   text-align: center;
-  font-family: Circular Std, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 100%;
   /* identical to box height, or 30px */
   letter-spacing: -0.015em;
@@ -1146,6 +1163,13 @@ a {
 
 .theme:hover .themeTopic {
   opacity: 1;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.theme img {
   -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
   transition: opacity 175ms ease, -webkit-transform 175ms ease;
   transition: transform 175ms ease, opacity 175ms ease;
@@ -1270,8 +1294,7 @@ a {
 }
 
 .display-nav {
-  background: #fff;
-  padding: 2rem;
+  padding: 1.5rem;
   width: 400px;
   height: 600px;
   border-radius: 15px;
@@ -1294,26 +1317,42 @@ a {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 50px;
   z-index: 99;
   overflow: hidden;
   -webkit-box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3);
           box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  mix-blend-mode: normal;
+  z-index: 9;
+  -webkit-backdrop-filter: saturate(120%) blur(90px);
+          backdrop-filter: saturate(120%) blur(90px);
+  color: #ffffff;
 }
 
-.event-header a,
-h3 {
-  margin: 0 10px 0 10px;
+.display-nav svg path {
+  fill: #ffffff !important;
 }
 
 .event-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding: 4px 0;
+}
+
+.event-header a {
+  margin: 0 10px 0 10px;
+  width: 100%;
+}
+
+.event-header div {
+  padding-left: 20px;
 }
 
 .event-header h2::after {
@@ -1321,10 +1360,11 @@ h3 {
 }
 
 .event-header h2:hover::after {
-  content: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.9585 9.5H15.0418' stroke='%238FADCF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.5 3.95834L15.0417 9.50001L9.5 15.0417' stroke='%238FADCF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  content: url("./assets/nav/arrow-right.svg");
   position: absolute;
   left: 0;
   margin-left: 20px;
+  margin-top: 10px;
 }
 
 .event-header .flex {
@@ -1341,8 +1381,9 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 30px;
-  margin-right: 5px;
+  height: 40px;
+  width: 40px;
+  margin-right: 0px;
   margin-left: 0px;
 }
 
@@ -1351,10 +1392,9 @@ h3 {
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
-  line-height: 50px;
+  line-height: 40px;
   letter-spacing: -0.015em;
   color: linear-gradient(180deg, #161e26 0%, #000509 100%);
-  margin-left: 5px;
 }
 
 .event-header h3 {
@@ -1364,12 +1404,25 @@ h3 {
   font-size: 15px;
   line-height: 13px;
   letter-spacing: -0.015em;
-  color: #b1b7c0;
+  color: #ffffff;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 980px) {
+  .horzLine {
+    display: block;
+  }
+  .gfgTitle {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  .dividingLine svg {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    margin: 0px 0 !important;
+    height: 4px !important;
+  }
   .display-nav {
-    background: #fff;
     padding: 2rem;
     width: 95vw;
     height: 95vh;
@@ -1395,7 +1448,7 @@ h3 {
     margin-right: auto;
     margin-top: 20px;
     z-index: 99;
-    overflow: scroll;
+    overflow-y: scroll;
   }
   .purpleBox {
     width: 30vw;
@@ -1776,6 +1829,19 @@ h3 {
 }
 
 @media screen and (max-width: 320px) {
+  .event-header img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 3s0px;
+    width: 3s0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
   .display-nav {
     width: 100vw;
     height: 100vh;
@@ -1785,7 +1851,7 @@ h3 {
     font-style: normal;
     font-weight: 900;
     font-size: 1rem;
-    line-height: 50px;
+    line-height: 40px;
     letter-spacing: -0.015em;
     color: linear-gradient(180deg, #161e26 0%, #000509 100%);
   }
@@ -1796,7 +1862,7 @@ h3 {
     font-size: 0.8rem;
     line-height: 13px;
     letter-spacing: -0.015em;
-    color: #b1b7c0;
+    color: #fff;
   }
 }
 
@@ -1936,7 +2002,7 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 100px;
+  min-height: 80px;
   font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1949,10 +2015,33 @@ h3 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.active,
-.accordion:hover {
-  transition: all 175ms ease, -webkit-all 175ms ease;
-  background: linear-gradient(343.19deg, #f6bf4a -4.41%, #ec622d 20.24%, #dc395e 62.41%, #c04d95 92.78%);
+.greenAccordion .active, .greenAccordion .accordion:hover {
+  background: #439A93;
+}
+
+.blueAccordion .active, .blueAccordion .accordion:hover {
+  background: #3483C6;
+}
+
+.creativeAccordion .active, .creativeAccordion .accordion:hover {
+  background: #821D7C;
+}
+
+.blockbusterAccordion .active, .blockbusterAccordion .accordion:hover {
+  background: #BF4E26;
+}
+
+.yellowAccordion .active, .yellowAccordion .accordion:hover {
+  background: linear-gradient(139.41deg, #D38D34 5.11%, #d67300 91.8%);
+  background: #D38D34;
+}
+
+.greyAccordion .active, .greyAccordion .accordion:hover {
+  background: #6F6F6F;
+}
+
+.redAccordion .active, .redAccordion .accordion:hover {
+  background: #BB3557;
 }
 
 .accordion:after {
