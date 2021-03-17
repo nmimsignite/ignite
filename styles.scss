@@ -904,6 +904,9 @@ a {
 .card .col {
   margin: auto 30px;
 }
+.bottomCard{
+  margin-top: 8px;
+}
 .eventDetailPage {
   // padding-top: 90px;
   padding: 90px 0px 120px 80px;
@@ -1000,6 +1003,12 @@ a {
   position: absolute;
   top: -40px;
   left: -40px;
+}
+
+.prize {
+  position: absolute;
+  top: -40px;
+  right: -35px;
 }
 .relative {
   position: relative;
