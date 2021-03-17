@@ -1084,14 +1084,47 @@ a {
 
   transform: translate(0, -10px);
 }
+
+.timeline-content{
+  margin: 100px 0;
+  // padding: 0 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-bar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // margin: 100px;
+  padding: 0 150px;
+}
+.hack-info {
+  padding: 0 50px;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100px;
+  // flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  // top: 140px;
+  // float: right;
+  // margin-right: 200px;
+}
 .circle {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-
   position: relative;
-  left: 584px;
-  top: 99px;
+  // left: 584px;
+  // top: 99px;
 
   background: linear-gradient(
     144.69deg,
@@ -1107,8 +1140,8 @@ a {
   display: block;
   position: absolute;
   z-index: 1;
-  top: 100%;
-  left: 50%;
+  // top: 100%;
+  // left: 50%;
 }
 .circle-end {
   height: 40px;
@@ -1116,8 +1149,8 @@ a {
   border-radius: 50%;
 
   position: relative;
-  left: 585px;
-  bottom: 0px;
+  // left: 585px;
+  // bottom: 0px;
 
   background: linear-gradient(
     144.69deg,
@@ -1132,16 +1165,16 @@ a {
   display: block;
   position: absolute;
   z-index: 1;
-  top: 100%;
-  left: 50%;
+  // top: 100%;
+  // left: 50%;
 }
 .vl {
   border-left: 6px solid rgba(246, 191, 74, 0.32);
-  height: 530px;
+  height: 430px;
   width: 0px;
   position: relative;
-  left: 600px;
-  top: 100px;
+  // left: 600px;
+  // top: 100px;
   font-family: Circular Std;
   font-style: normal;
   font-weight: 900;
@@ -1172,21 +1205,6 @@ a {
   text-align: center;
 }
 
-.hack-info {
-  font-family: Circular Std;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 100px;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  top: 140px;
-  float: right;
-  margin-right: 400px;
-}
 .display-nav svg {
   position: absolute;
   right: 20px;
@@ -1311,11 +1329,7 @@ a {
   opacity: 0.9;
 }
 
-@media screen and (max-width: 1350px){
-  .timeline{
-    display: none;
-  }
-}
+
 
 @media screen and (max-width: 980px) {
   .horzLine{
@@ -1710,7 +1724,30 @@ a {
     flex-direction: row !important;
   }
 }
+@media screen and (max-width: 700px){
+  .timeline-holder,.hack-info{
+    padding: 0 0;
+  }
+  .timeline-bar{
+    padding: 0 0px;
+    padding-left: 40px;
+  }
+  .timeline-holder {
+    width: 120px;
+    font-size: 18px;
+    right: 60px;
+  }
+
+  .hack-info{
+    font-size: 18px;
+    padding-left: 80px;
+  }
+}
+
 @media screen and (max-width: 320px) {
+  .hack-info{
+    padding-left: 50px;
+  }
   .event-header img {
   display: flex;
   flex-direction: row;
