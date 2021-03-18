@@ -86,7 +86,7 @@ body {
 
 .aboutText {
   margin-top: 20px;
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
@@ -101,7 +101,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: Integral CF, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Integral CF, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -144,7 +144,7 @@ h3 {
   width: 100%;
   height: 250px;
   background: #555555;
-  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
   padding: 0 10px;
   position: relative;
 }
@@ -171,7 +171,7 @@ h3 {
 .socialCard:hover svg {
   -webkit-transform: translate(0, -10px);
           transform: translate(0, -10px);
-  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
 }
 
 @-webkit-keyframes cementToColor {
@@ -295,7 +295,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -338,7 +338,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -422,7 +422,7 @@ h3 {
 
 .socialcardText {
   text-align: center;
-  font-family: Circular Std, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Circular Std, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -440,7 +440,7 @@ h3 {
 
 .socialcardTextBefore {
   text-align: center;
-  font-family: Circular Std, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Circular Std, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -480,7 +480,7 @@ a {
 }
 
 .massiveText {
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
   text-decoration: underline;
 }
 
@@ -599,7 +599,7 @@ a {
   border-radius: 30px 0 0 30px;
   width: 292px;
   padding: 20px 40px;
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -607,7 +607,7 @@ a {
 }
 
 .parnterTitle {
-  font-family: "Integral CF", "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Integral CF", "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 25px;
@@ -629,7 +629,7 @@ a {
 }
 
 .presented {
-  font-family: "Integral CF", "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Integral CF", "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
   margin-bottom: 10px;
   opacity: 0.6;
@@ -657,7 +657,7 @@ a {
 }
 
 .subscribe {
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   line-height: 100%;
@@ -698,7 +698,7 @@ a {
 }
 
 .subText {
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
@@ -720,7 +720,7 @@ a {
 }
 
 .eventsFlow {
-  font-family: Integral CF, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Integral CF, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 80px;
@@ -799,7 +799,7 @@ a {
 
 .tagline {
   margin-top: 60px;
-  font-family: "Epilogue", "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Epilogue", "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 55px;
@@ -814,7 +814,7 @@ a {
 }
 
 .subhead {
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   margin: 20px 47.57% 0 0;
   font-weight: 300;
@@ -826,7 +826,7 @@ a {
 }
 
 .navbar {
-  font-family: "Integral CF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Integral CF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1.5em;
@@ -869,7 +869,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 15px;
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -985,6 +985,49 @@ a {
   margin-top: 40px;
 }
 
+.scheduleCard {
+  background: #FFFFFF;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+  padding: 20px 24px;
+  margin: 18px 0;
+  position: relative;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 70vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.scheduleName {
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  /* or 24px */
+  color: #fff;
+  opacity: 1;
+}
+
+.scheduleLink {
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  color: white;
+  opacity: 0.8;
+}
+
+.scheduleTime {
+  font-family: "Integral CF", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  color: white;
+  opacity: 0.8;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 .card .col {
   margin: auto 30px;
 }
@@ -1015,7 +1058,7 @@ a {
 }
 
 .cardHead {
-  font-family: "Integral CF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Integral CF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -1070,7 +1113,7 @@ a {
 
 .cardText {
   margin: 10px 0 8px 0;
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -1114,7 +1157,7 @@ a {
   top: -50px;
   left: 0;
   text-align: center;
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -1122,7 +1165,7 @@ a {
   /* identical to box height, or 30px */
   letter-spacing: -0.015em;
   color: rgba(255, 255, 255, 0.8);
-  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1133,7 +1176,7 @@ a {
 
 .theme {
   border-radius: 20px;
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -1417,7 +1460,7 @@ a {
 }
 
 .event-header h2 {
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
@@ -1427,7 +1470,7 @@ a {
 }
 
 .event-header h3 {
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -1438,6 +1481,24 @@ a {
 }
 
 @media screen and (max-width: 980px) {
+  .scheduleCard {
+    margin-top: 30px;
+  }
+  .scheduleDate {
+    width: 80vw;
+    margin-top: 20px;
+  }
+  .scheduleTime {
+    font-family: "Integral CF", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    color: white;
+    opacity: 0.8;
+    position: absolute;
+    top: -24px;
+    right: 0px;
+    left: 0;
+    margin: auto 0;
+  }
   .horzLine {
     display: block;
   }
@@ -1902,7 +1963,7 @@ a {
     height: 100vh;
   }
   .event-header h2 {
-    font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 1rem;
@@ -1911,7 +1972,7 @@ a {
     color: linear-gradient(180deg, #161e26 0%, #000509 100%);
   }
   .event-header h3 {
-    font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 0.8rem;
@@ -1998,7 +2059,7 @@ a {
 }
 
 .detailHead {
-  font-family: "Integral CF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Integral CF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -2009,7 +2070,7 @@ a {
 }
 
 .detailText {
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: 100%;
@@ -2058,7 +2119,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 80px;
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -2120,7 +2181,7 @@ a {
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
-  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 25px;
