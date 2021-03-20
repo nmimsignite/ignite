@@ -438,10 +438,7 @@ function faqAccordion() {
 }
 
 themeDropBox = () => {
-  console.log("yeeet");
   theme = document.querySelector("#CognoAI");
-  console.log(theme);
-  console.log(theme.children);
   theme.addEventListener("click", () => {
     theme.classList.toggle("open");
     panel = theme.nextElementSibling;
