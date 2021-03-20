@@ -1481,6 +1481,9 @@ a {
 }
 
 @media screen and (max-width: 980px) {
+  .desc {
+    width: 60vw !important;
+  }
   .scheduleCard {
     margin-top: 30px;
   }
@@ -1919,6 +1922,9 @@ a {
 }
 
 @media screen and (max-width: 700px) {
+  .desc {
+    width: 80vw !important;
+  }
   .timeline-holder, .hack-info {
     padding: 0 0;
   }
@@ -2194,6 +2200,7 @@ a {
 }
 
 .desc {
+  text-align: center;
   max-height: 0px;
   overflow: hidden;
   width: 40vw;
