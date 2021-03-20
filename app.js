@@ -437,10 +437,29 @@ function faqAccordion() {
   }
 }
 
+themeDropBox = () => {
+  console.log("yeeet");
+  theme = document.querySelector("#CognoAI");
+  console.log(theme);
+  console.log(theme.children);
+  theme.addEventListener("click", () => {
+    theme.classList.toggle("open");
+    panel = theme.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  })
+
+}
+
 document.addEventListener("DOMContentLoaded", animatePages());
 document.addEventListener("DOMContentLoaded", animateThings());
-// document.addEventListener("DOMContentLoaded", faqAccordion());
+document.addEventListener("DOMContentLoaded", themeDropBox());
 
+// document.addEventListener("DOMContentLoaded", faqAccordion());
+// document.addEventListener("DOMContentLoaded", themeDropBox());
 // document.addEventListener("DOMContentLoaded", skewEffect());
 
 barba.init({
