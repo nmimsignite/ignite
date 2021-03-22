@@ -437,26 +437,10 @@ function faqAccordion() {
   }
 }
 
-themeDropBox = () => {
-  theme = document.querySelector("#CognoAI");
-  theme.addEventListener("click", () => {
-    theme.classList.toggle("open");
-    panel = theme.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  })
-
-}
-
 document.addEventListener("DOMContentLoaded", animatePages());
 document.addEventListener("DOMContentLoaded", animateThings());
-document.addEventListener("DOMContentLoaded", themeDropBox());
-
 // document.addEventListener("DOMContentLoaded", faqAccordion());
-// document.addEventListener("DOMContentLoaded", themeDropBox());
+
 // document.addEventListener("DOMContentLoaded", skewEffect());
 
 barba.init({
